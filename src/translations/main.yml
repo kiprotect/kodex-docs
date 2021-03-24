@@ -1,0 +1,105 @@
+hp:
+  kodex:
+    actions:
+      text:
+        _t:
+          de: c81f21d005ce6652
+          en: c81f21d005ce6652
+        de: "Aktionen führen spezifische Operationen auf Eingabeelementen\
+          \ aus, z.B. um sie zu analysieren oder zu transformieren.\
+          \ Alles, was Kodex mit Daten macht, wird durch eine\
+          \ Aktion beschrieben. "
+        en: "Actions perform specific operations on input items,\
+          \ e.g. to analyze or transform them. Everything that\
+          \ Kodex does with data is described by an action. "
+      title:
+        _t:
+          de: ff8059dc6752afdd
+          en: ff8059dc6752afdd
+        de: Aktionen
+        en: Actions
+    blueprints:
+      text:
+        _t:
+          de: bfcb3ae900096c73
+          en: bfcb3ae900096c73
+        de: "Blueprints sind die Konfigurationsdateien, die festlegen,\
+          \ wie Kodex Daten laden, analysieren, transformieren\
+          \ und schreiben soll. "
+        en: "Blueprints are the configuration files that specify\
+          \ how Kodex should load, analyze, transform and write\
+          \ data. "
+      title:
+        _t:
+          de: bdfcb9f749ddda36
+          en: bdfcb9f749ddda36
+        de: Blaupausen
+        en: Blueprints
+    cli:
+      text:
+        _t:
+          de: d112508599f28fd8
+          en: d112508599f28fd8
+        de: "Das Befehlszeilen-Dienstprogramm ist der einfachste\
+          \ Weg, um mit der Analyse und Transformation von Daten\
+          \ mit Kodex zu beginnen. "
+        en: "The command line utility is the easiest way to get\
+          \ started analyzing and transforming data with Kodex. "
+    description:
+      _t:
+        de: f016da1922834366
+        en: f016da1922834366
+      de: "Kodex ist ein technisches Tool für Datenschutz und\
+        \ Sicherheit, das Ihnen hilft, Datenflüsse in Ihrem Unternehmen\
+        \ zu modellieren und zu verstehen und datenschutzfördernde\
+        \ Umwandlungen (Privacy Enhancing Transformations, PETs)\
+        \ zur Sicherung Ihrer Daten zu nutzen. "
+      en: "Kodex is a privacy & security engineering tool that\
+        \ helps you to model and understand data flows in your\
+        \ organization and use privacy-enhancing transformations\
+        \ (PETs) to secure your data. "
+  site-title:
+    _t:
+      de: 4231c680a5d3f5d8
+      en: 4231c680a5d3f5d8
+    de: Kodex Dokumentation
+    en: Kodex Documentation
+  translationNote:
+    _t:
+      de: d0fd32df39a8af20
+      en: d0fd32df39a8af20
+    de: >-
+      **Bitte beachten Sie** : Wir schreiben unsere Dokumentation
+      auf Englisch und übersetzen sie dann in andere Sprachen
+      wie Deutsch. Dies kann manchmal zu fehlerhaften Übersetzungen
+      führen. Wenn Sie glauben, dass dies der Fall ist, überprüfen
+      Sie entweder die Originalversion, indem Sie "Englisch" aus
+      dem Navigationsmenü wählen (wenn Sie Englisch sprechen),
+      oder <a href="mailto:docs@kiprotect.com">kontaktieren Sie
+      uns</a>, damit wir die Übersetzung korrigieren können.
+    en: >-
+      **Please note**: We write our documentation in English and
+      then translate it to other languages like German. Sometimes
+      this can lead to incorrect translations. If you think that's
+      the case, either check the original version by selecting
+      "English" from the navigation menu (if you speak English),
+      or <a href="mailto:docs@kiprotect.com">contact us</a> so
+      that we can fix the translation.
+  welcome:
+    _t:
+      de: edf2b07f0f0334d2
+      en: edf2b07f0f0334d2
+    de: "Willkommen bei der Kodex-Dokumentation! Diese Seite enthält\
+      \ Informationen über die Kernkonzepte, Produkte und Lösungen,\
+      \ die wir anbieten. Wenn Sie einen Fehler finden oder einen\
+      \ Vorschlag machen möchten, <a href=\"https://github.com/kiprotect/docs/issues\"\
+      >öffnen Sie</a> bitte entweder <a href=\"https://github.com/kiprotect/docs/issues\"\
+      >ein Problem</a> oder <a href=\"mailto:docs@kiprotect.com\"\
+      >nehmen Sie Kontakt mit uns</a> auf, wir hören gerne von\
+      \ Ihnen! "
+    en: "Welcome to the Kodex documentation! This site contains\
+      \ information about the core concepts, products and solutions\
+      \ that we offer. If you find a mistake or if you want to\
+      \ make a suggestion, please either <a href=\"https://github.com/kiprotect/docs/issues\"\
+      >open an issue</a> or <a href=\"mailto:docs@kiprotect.com\"\
+      >get in touch with us</a>, we love to hear from you! "

@@ -1,0 +1,532 @@
+071c4a8620f60603:
+  de: '    cd docker-compose'
+  en: '    cd docker-compose'
+079c4a80671bdf9a:
+  de: >-
+    Kodex-EE muss eine Verbindung zu Datenquellen und -zielen
+    haben, von denen es Daten lesen oder in die es Daten schreiben
+    soll. Die Verarbeitungsgeschwindigkeit wird durch die verfügbare
+    Netzwerk-Bandbreite begrenzt.
+  en: >-
+    Kodex-EE needs to have connectivity to data sources and destinations
+    from which it should read or to which it should write data.
+    Processing speed will be limited by available network bandwidth.
+0ca76ef3752c6e08:
+  de: >-
+    Kodex-EE verfügt über ein internes, pegelbasiertes Protokollierungssystem,
+    das mit **Syslog** kompatibel ist.
+  en: >-
+    Kodex-EE has an internal, level-based logging system that
+    is compatible with <md-strong>syslog</md-strong>.
+0cf21fda047dfb1c:
+  de: >-
+    Der Befehl `init` führt notwendige Initialisierungsaktionen
+    wie die Migration von Datenbanktabellen durch. Sie sollten
+    ihn immer dann ausführen, wenn Sie Kodex auf die neueste Version
+    aktualisieren.
+  en: >-
+    The <md-code>init</md-code> command performs necessary initialization
+    actions like the migration of database tables. You should
+    run it whenever you upgrade Kodex to the latest version.
+1112c9985074ea22:
+  de: '### Netzwerkbetrieb'
+  en: <md-heading v="###">Networking</md-heading>
+1378712599fc5664:
+  de: '    cd kodex'
+  en: '    cd kodex'
+1aec2f76aedc0270:
+  de: "* Eine **PostgreSQL-Datenbank** (vorzugsweise Version 9.6\
+    \ oder neuer), die Kodex-EE zum Speichern von Metadaten über\
+    \ Datenströme, Aktionen und Parameter verwendet. Bestimmte\
+    \ Kodex-EE-Plugins (z. B. Klaro, Konsens) verwenden ihre eigenen\
+    \ PostgreSQL-Schemas für die Datenspeicherung. Aus Stabilitäts-\
+    \ und Leistungsgründen ist es ratsam, für diese separate PostgreSQL-Instanzen\
+    \ bereitzustellen.  "
+  en: >-
+    <md-list v="*">A <md-strong>PostgreSQL</md-strong> database
+    (preferrably version 9.6 or newer), which Kodex-EE uses to
+    store meta-data about data streams, actions and parameters.
+    Specific Kodex-EE plugins (e.g. Klaro, Konsens) use their
+    own PostgreSQL schemas for data storage. For stability and
+    performance reasons it is advisable to provide separate PostgreSQL
+    instances to these.  </md-list>
+2b95a6de71e52cc4:
+  de: '    kodex-ee install --method docker-compose'
+  en: '    kodex-ee install --method docker-compose'
+39ad169c0e251f7e:
+  de: '# Kodex Enterprise Edition (EE)'
+  en: <md-heading v="#">Kodex Enterprise Edition (EE)</md-heading>
+3aa6588013875745:
+  de: '    kodex-ee settings generate [--filename [settings.yml]]'
+  en: >2-
+        kodex-ee settings generate <md-link>--filename [settings.yml</md-link>]
+3c2daf4e52c0fecb:
+  de: >-
+    <md-list v=""*&gt;Optional**, entweder ein **persistentes
+    Verzeichnis/Volume**, auf das von API- und Daemon-Knoten aus
+    zugegriffen werden kann, oder ein **"Blob"-Speicherdienst**
+    mit einer S3-kompatiblen API. Kodex-EE verwendet diese, um
+    Dateidaten zu speichern, die für bestimmte Hintergrundaufgaben
+    erzeugt werden.</md-list>
+  en: >-
+    <md-list v="<md-it>"></md-it>Optionally*, either a <md-strong>persistent
+    directory/volume</md-strong> that is accessible from API and
+    daemon nodes, or a <md-strong>"blob" storage service</md-strong>
+    with an S3-compatible API. Kodex-EE uses these to store file
+    data that is generated for certain background tasks.</md-list>
+3ed45f73d0dd9297:
+  de: >-
+    * Ein **RabbitMQ-Server** (vorzugsweise Version 3.8 oder neuer)
+    oder ein **Kafka-Server** (vorzugsweise Version 2.7 oder neuer),
+    den Kodex-EE verwendet, um während der Verarbeitung Datenelemente
+    zwischenzuspeichern.
+  en: >-
+    <md-list v="*">A <md-strong>RabbitMQ</md-strong> server (preferrably
+    version 3.8 or newer), or a <md-strong>Kafka</md-strong> server
+    (preferrably version 2.7 or newer), which Kodex-EE uses to
+    store intermediate data items during processing.</md-list>
+431548d259180785:
+  de: >-
+    * Ein **Authentifizierungsdienst auf Basis von SSO, SAML,
+    OpenID-Connect oder LDAP**, den Kodex-EE zur Authentifizierung
+    von Benutzern verwenden kann. Der Dienst muss eine Zuordnung
+    von Benutzern zu Organisationen und Rollen innerhalb dieser
+    Organisationen bieten.
+  en: >-
+    <md-list v="*">An <md-strong>authentication service based
+    on SSO, SAML, OpenID-Connect or LDAP</md-strong>, which Kodex-EE
+    can use to authenticate users. The service must provide a
+    mapping of users to organizations and roles within those organizations.</md-list>
+44cbfc7cc98c211e:
+  de: >-
+    Der Befehl `daemon` führt den Daemon von Kodex-EE aus, der
+    alle asynchronen Datenverarbeitungsaufgaben sowie die Hintergrundaufgaben
+    für alle Systemkomponenten ausführt. Sie können mehrere Instanzen
+    des Daemons auf demselben Rechner (nicht empfohlen) oder einer
+    Flotte von Rechnern laufen lassen, um die Verarbeitungsmöglichkeiten
+    von Kodex zu skalieren.
+  en: >-
+    The <md-code>daemon</md-code> command executes the daemon
+    of Kodex-EE, which performs all asynchronous data processing
+    tasks as well as background tasks for all system components.
+    You can run multiple instances of the daemon on the same machine
+    (not recommended) or a fleet of machines to scale the processing
+    capabilities of Kodex.
+46478bc30dae9ad8:
+  de: '### Speicher'
+  en: <md-heading v="###">Memory</md-heading>
+48976d117fc4dd96:
+  de: >-
+    Kodex-EE wird als eine einzige Binärdatei `kodex-ee` mit mehreren
+    Unterbefehlen verteilt, die die verschiedenen Dienste ausführen.
+    Zum Beispiel führt `kodex-ee api run` den API-Server aus,
+    `kodex-ee daemon run` den Daemon und `kodex-ee app run` die
+    Frontend-Dateien (die der Befehl `api` ebenfalls ausführt).
+    `kodex init` führt notwendige Initialisierungen wie die Erstellung
+    von Datenbanktabellen aus.
+  en: >-
+    Kodex-EE consists is distributed as a single binary <md-code>kodex-ee</md-code>
+    with several subcommands that run the different services.
+    For example, <md-code>kodex-ee api run</md-code> will run
+    the API server, <md-code>kodex-ee daemon run</md-code> will
+    run the daemon and <md-code>kodex-ee app run</md-code> will
+    serve the frontend files (which the <md-code>api</md-code>
+    command is also capable of btw). <md-code>kodex init</md-code>
+    will perform necessary initializations like the creation of
+    database tables.
+4b7ab3c07e83702d:
+  de: '    docker-compose hoch'
+  en: '    docker-compose up'
+4d53d4795caf19e6:
+  de: >-
+    Kodex-EE speichert verarbeitete Daten in einer Nachrichtenwarteschlange
+    zur internen Verarbeitung und Pufferung. Die Menge der in
+    diesen Warteschlangen gespeicherten Daten hängt von vielen
+    Faktoren ab, insbesondere von der Anzahl der eingehenden Daten,
+    der Anzahl der Daemon-Knoten und der Lese-/Schreibkapazität
+    der Datenquellen und -ziele. Kodex-EE wendet automatisch Backpressure
+    an, wenn Schreibvorgänge in die interne Warteschlange unmöglich
+    werden.
+  en: >-
+    Kodex-EE stores processed data in a message queue for internal
+    processing and buffering. The amount of data stored in those
+    queues depends on many factors, notably the number of incoming
+    data items, the number of daemon nodes and the read/write
+    capacity of data sources and destinations. Kodex-EE will automatically
+    apply backpressure when writes to the internal queue become
+    impossible.
+50c79e9ec0c8c3b9:
+  de: '### Redis-Datenbank(en)'
+  en: <md-heading v="###">Redis Database(s)</md-heading>
+51345449c20e7d7b:
+  de: '## Bereitstellungsoptionen'
+  en: <md-heading v="##">Deployment Options</md-heading>
+5b9f476d65248bab:
+  de: '# Kodex Community Edition (CE)'
+  en: <md-heading v="#">Kodex Community Edition (CE)</md-heading>
+5d59d5d03f7225f8:
+  de: >-
+    Um die Enterprise-Edition von Kodex (Kodex-EE) zu installieren,
+    laden Sie zunächst `kodex-ee` von unserem [Webportal](https://app.kiprotect.com)
+    herunter. Die Binärdatei enthält alles, was Sie für die ersten
+    Schritte benötigen. Insbesondere bietet es einen `install`
+    Befehl, der die Installation von Kodex-EE für verschiedene
+    Umgebungen (größtenteils) automatisiert. Um zum Beispiel eine
+    Docker-Compose-Konfiguration mit allen Kodex-Komponenten und
+    den erforderlichen externen Diensten zu erstellen, führen
+    Sie einfach aus
+  en: >-
+    To install the enterprise edition of Kodex (Kodex-EE), first
+    download <md-code>kodex-ee</md-code> from our <md-link href="aHR0cHM6Ly9hcHAua2lwcm90ZWN0LmNvbQ==">web
+    portal</md-link>. The binary contains everything you need
+    to get started. Notably, it provides an <md-code>install</md-code>
+    command that (mostly) automates the installation of Kodex-EE
+    for different environments. For example, to create a Docker
+    compose configuration with all Kodex components and required
+    external services, simply run
+61c4933801852d47:
+  de: '## `settings`'
+  en: <md-heading v="##"><md-code>settings</md-code></md-heading>
+6314dc3ec5218081:
+  de: '## Plugins'
+  en: <md-heading v="##">Plugins</md-heading>
+63382307865140e0:
+  de: '### Lagerung'
+  en: <md-heading v="###">Storage</md-heading>
+67e5dbc58f38ecc9:
+  de: '# Betrieb'
+  en: <md-heading v="#">Operations</md-heading>
+6bcdddfe6ac0ff68:
+  de: '    Installation vornehmen'
+  en: '    make install'
+726626eb553ffffa:
+  de: '## `init`'
+  en: <md-heading v="##"><md-code>init</md-code></md-heading>
+79494d1c401964ce:
+  de: >-
+    Der Befehl `upgrade` lädt die neueste Version von Kodex herunter
+    und ersetzt das Binary damit.
+  en: >-
+    The <md-code>upgrade</md-code> command will download the latest
+    version of Kodex and replace the binary with it.
+7d6354b736943ec5:
+  de: '## Komponenten'
+  en: <md-heading v="##">Components</md-heading>
+8095d74aa4ecc343:
+  de: >-
+    Der Befehl `settings` hilft Ihnen bei der Verwaltung der Kodex-Einstellungen.
+    Standardmäßig sucht Kodex nach der Umgebungsvariablen `KODEX_SETTINGS`,
+    die eine Liste von Verzeichnissen enthalten sollte, die durch
+    `:` getrennt sind. Es lädt dann alle `.yml` Dateien in diesen
+    Verzeichnissen in der angegebenen Reihenfolge (und alphanumerisch
+    sortiert), um die globalen Einstellungen zu erstellen.
+  en: >-
+    The <md-code>settings</md-code> command helps you to manage
+    Kodex settings. By default, Kodex will look for the environment
+    variable <md-code>KODEX_SETTINGS</md-code>, which should contain
+    a list of directories separated by <md-code>:</md-code>. It
+    will then load all <md-code>.yml</md-code> files in these
+    directories in the specified order (and sorted alphanumerically)
+    to construct the global settings.
+82cc67433f3bd18e:
+  de: '    machen'
+  en: '    make'
+838f57f611d1ee17:
+  de: >-
+    Wenn Sie eine minimale, kommentierte Einstellungsdatei erzeugen
+    wollen, führen Sie einfach
+  en: >-
+    If you want to generate a minimal, annotated settings file
+    simply run
+859be58f846a3696:
+  de: >-
+    * Eine **Redis-Datenbank** (vorzugsweise Version 5.0 oder
+    neuer), die Kodex-EE verwendet, um z.B. API- und Datenverarbeitungsmetriken
+    sowie für die Ratenbegrenzung notwendige Daten zu speichern.
+  en: >-
+    <md-list v="*">A <md-strong>Redis</md-strong> database (preferrably
+    version 5.0 or newer), which Kodex-EE uses to e.g. store API
+    and data processing metrics as well as data necessary for
+    rate limiting.</md-list>
+8694d4ab631ba0ee:
+  de: '### Betriebssystem'
+  en: <md-heading v="###">Operating System</md-heading>
+86f37ecd251b6e79:
+  de: >-
+    Der Befehl `install` hilft Ihnen bei der Installation von
+    Kodex, indem er bestimmte Installationsschritte wie die Erzeugung
+    von Docker-Images oder Dienstkonfigurationsdateien automatisiert.
+  en: >-
+    The <md-code>install</md-code> command helps you to install
+    Kodex by automating specific installation steps like the generation
+    of Docker images or service configuration files.
+89468c0d7ae63b51:
+  de: >-
+    Um die Community-Edition von Kodex zu installieren, führen
+    Sie einfach
+  en: To install the community edition of Kodex, simply run
+938191c6b0467e29:
+  de: '### PostgreSQL-Datenbank(en)'
+  en: <md-heading v="###">PostgreSQL Database(s)</md-heading>
+977cecd153e19d37:
+  de: >-
+    Kodex EE kann auf Systemen mit minimalen Ressourcen wie einem
+    Embedded System oder SoC laufen.
+  en: >-
+    Kodex EE can run on systems with minimal resources like an
+    embedded system or SoC.
+9d6be7fd2a64de07:
+  de: >-
+    <md-list v=""*&gt;Optional** eine **Redis-Datenbank** (vorzugsweise
+    Version 5.0 oder neuer), die Kodex-EE verwendet, um z.B. API-
+    und Datenverarbeitungsmetriken sowie für die Ratenbegrenzung
+    notwendige Daten zu speichern.</md-list>
+  en: >-
+    <md-list v="<md-it>"></md-it>Optionally*, a <md-strong>Redis</md-strong>
+    database (preferrably version 5.0 or newer), which Kodex-EE
+    uses to e.g. store API and data processing metrics as well
+    as data necessary for rate limiting.</md-list>
+a4f2242625296ee4:
+  de: >-
+    Die folgenden Abschnitte beschreiben betriebsbezogene Aspekte
+    von Kodex-EE.
+  en: >-
+    The following sections describe operations-related aspects
+    of Kodex-EE.
+a6588afea6e73f1b:
+  de: '## `upgrade`'
+  en: <md-heading v="##"><md-code>upgrade</md-code></md-heading>
+a6ec553cbdbfec82:
+  de: '## `api`'
+  en: <md-heading v="##"><md-code>api</md-code></md-heading>
+ab2fa873679a48c6:
+  de: >-
+    Wir empfehlen mindestens 512 MB verfügbaren RAM sowohl für
+    die **API** als auch für den **Daemon**. Die tatsächliche
+    Speichernutzung kann je nach Arbeitsbelastung variieren, aber
+    Kodex EE wird versuchen, die Datenverarbeitung automatisch
+    zu begrenzen, um nicht den gesamten verfügbaren Speicher auszuschöpfen.
+  en: >-
+    We recommend at least 512 MB of available RAM for both the
+    <md-strong>API</md-strong> and the <md-strong>daemon</md-strong>.
+    Actual memory usage can vary depending on the workloads but
+    Kodex EE will try to automatically limit data processing in
+    order to not exhaust all available memory.
+b4f3f4d42c5a36c8:
+  de: >-
+    Sowohl der Daemon als auch die API verarbeiten Daten gleichzeitig
+    in parallelen Threads, daher können sie effektiv mehrere CPU-Kerne
+    / Verarbeitungs-Threads nutzen.
+  en: >-
+    Both the daemon and the API process data concurrently in parallel
+    threads, hence they can effectively utilize multiple CPU cores
+    / processing threads.
+b5994329b0509dae:
+  de: '    git clone https://github.com/kiprotect/kodex'
+  en: '    git clone https://github.com/kiprotect/kodex'
+b80367fa8ef3a434:
+  de: >-
+    Kodex-EE wird als statisch kompiliertes X64/AMD64-Binary geliefert,
+    das mit allen gängigen Linux-Distributionen kompatibel ist.
+    Der Betrieb von Kodex-EE unter Windows, MacOS und OpenBSD
+    sollte möglich sein, ist aber derzeit ungetestet und wird
+    nicht unterstützt.
+  en: >-
+    Kodex-EE is delivered as a statically compiled X64/AMD64 binary
+    that is compatible with all mayor Linux distributions. Running
+    Kodex-EE on Windows, MacOS and OpenBSD should be possible
+    but is currently untested and unsupported.
+b859e25c7b74ab34:
+  de: >-
+    Das war's! Sie können jetzt Blaupausen mit dem CLI-Befehl
+    `kodex` bearbeiten.
+  en: >-
+    That's it! You can now process blueprints with the <md-code>kodex</md-code>
+    CLI command.
+b8d36166335ddff3:
+  de: >-
+    Der Befehl `api` führt die REST-API von Kodex-EE aus. Sie
+    können mehrere Instanzen der API auf demselben Rechner (nicht
+    empfohlen) oder einer Flotte von Rechnern ausführen, um die
+    Verarbeitungsmöglichkeiten von Kodex zu skalieren.
+  en: >-
+    The <md-code>api</md-code> command executes the REST API of
+    Kodex-EE. You can run multiple instances of the API on the
+    same machine (not recommended) or a fleet of machines to scale
+    the processing capabilities of Kodex.
+b8f9aafd6f6bf057:
+  de: >-
+    Abgesehen von der oben erwähnten aufgabenspezifischen Speicherung
+    benötigen weder der Daemon noch die API eine persistente Datenspeicherung
+    auf der Festplatte.
+  en: >-
+    Apart from task-specific storage mentioned above, neither
+    the daemon nor the API require persistent on-disk data storage.
+bb0ba7cc972bf7e6:
+  de: '## Anforderungen'
+  en: <md-heading v="##">Requirements</md-heading>
+bb875fccb0f16b7a:
+  de: '## Loggen'
+  en: <md-heading v="##">Logging</md-heading>
+bc77c776b0a25a04:
+  de: >-
+    Kodex-EE wird als eine Reihe von zustandslosen Linux-Diensten
+    eingesetzt, die mit externen Datenbanken und Systemen interagieren,
+    wie oben beschrieben. Eine vollständige Bereitstellung besteht
+    aus mindestens einem **Daemon** und einer **API-Instanz**.
+    Diese beiden Dienste sind zustandslos und können mit einer
+    einfachen Einstellungsdatei konfiguriert werden. Die API ist
+    für die Verwendung hinter einem Reverse-Proxy konzipiert,
+    der TLS und Lastausgleich handhabt (Beispielkonfigurationen
+    für Server wie **nginx** oder **caddy** sind verfügbar).
+  en: >-
+    Kodex-EE is deployed as a set of stateless Linux services
+    that interact with external databases and systems, as described
+    above. A full deployment consists of at least one <md-strong>daemon</md-strong>
+    and one <md-strong>API</md-strong> instance. Both of these
+    services are stateless and can be configured using a simple
+    settings file. The API is designed to be used behind a reverse
+    proxy that handles TLS and load balancing (example configurations
+    for servers like <md-strong>nginx</md-strong> or <md-strong>caddy</md-strong>
+    is available).
+bcd9b62a557c69b7:
+  de: >-
+    Klaro bietet eine Website-Scan-Funktionalität, die auf einem
+    Headless Chrome-Browser basiert, der innerhalb eines Docker-Containers
+    läuft. Die Ausführung von Klaro vor Ort erfordert einen funktionierenden
+    Docker-Daemon auf den Knoten, die diese Aufgaben ausführen.
+  en: >-
+    Klaro provides a website scanning functionality that is based
+    on a headless Chrome browser running inside a Docker container.
+    Running Klaro on-premises requires a working Docker daemon
+    on the nodes that run these tasks.
+bd40181c9c2f3698:
+  de: '## `install`'
+  en: <md-heading v="##"><md-code>install</md-code></md-heading>
+c7f83c894469e7f3:
+  de: >-
+    Kodex-EE verwendet Redis für die Sammlung von Metriken und
+    die Aufbewahrung des internen Zustands während der Verarbeitung
+    (z. B. für die Anonymisierung). Metriken werden über eine
+    hierarchische Zeitspanne (Stunden, Tage, Wochen, Monate, Jahre)
+    erzeugt und einzelne Datenelemente laufen automatisch ab.
+    Der Speicherbedarf für den internen Status hängt von der Art
+    der Datenverarbeitung und der Anzahl der verarbeiteten Elemente
+    ab.
+  en: >-
+    Kodex-EE uses Redis for metrics collection and keeping of
+    internal state during processing (e.g. for anonymization).
+    Metrics are generated using a hierarchical time-spans (hours,
+    days, weeks, months, years) and individual data items expire
+    automatically. Internal state storage requirements will vary
+    depending on the type of data processing and the number of
+    items processed.
+ca21d598668e98c6:
+  de: '### Klaro'
+  en: <md-heading v="###">Klaro</md-heading>
+ce73cdafabea0211:
+  de: >-
+    Damit sollten Sie ein voll funktionsfähiges Testsystem mit
+    dem Kodex-Frontend erhalten, das auf Port 4242 läuft. Die
+    folgenden Abschnitte erklären im Detail, wie Sie Kodex-EE
+    auf Ihrer Infrastruktur dauerhaft zum Laufen bringen.
+  en: >-
+    That should give you a fully functional test system with the
+    Kodex frontend running on port 4242. The following sections
+    explain in detail how to get Kodex-EE running on your infrastructure
+    in a more permanent way.
+d289e7c1cc85ba9a:
+  de: '## Daemon & API-Anforderungen'
+  en: <md-heading v="##">Daemon & API Requirements</md-heading>
+d36588c253ca125e:
+  de: >-
+    Kodex-EE enthält mehrere Plugins, die zusätzliche Funktionen
+    über die Kernkomponenten hinaus bieten. Zum Beispiel bietet
+    das Klaro-Plugin eine Plattform zur Verwaltung von Datenschutz
+    und Sicherheit für Websites. Die Verwendung dieser Plugins
+    kann zusätzliche Dienste erfordern, die wir in den folgenden
+    Abschnitten beschreiben.
+  en: >-
+    Kodex-EE contains several plugins that provide additional
+    functionality beyond the core components. For example, the
+    Klaro plugin provides a privacy & security management platform
+    for websites. Using these plugins might require additional
+    services, which we describe in the following sections.
+dbfd6ef1e10cd8d1:
+  de: '### Nachrichten-Warteschlange(n) (RabbitMQ oder Kafka)'
+  en: >-
+    <md-heading v="###">Message Queue(s) (RabbitMQ or Kafka)</md-heading>
+e28f8d55894f0317:
+  de: >-
+    Kodex-EE sammelt verschiedene Metriken, die über die REST-API
+    offengelegt werden, und unterstützt die Instrumentierung für
+    Prometheus.
+  en: >-
+    Kodex-EE collects various metrics that are exposed via the
+    REST API and supports instrumentation for Prometheus.
+e29384ae4b618cd2:
+  de: '## `daemon`'
+  en: <md-heading v="##"><md-code>daemon</md-code></md-heading>
+e3b0c44298fc1c14:
+  de: ''
+  en: ''
+e455c6dc1d3cefea:
+  de: >-
+    Kodex-EE verwendet ein primäres Datenbankschema, um Metadaten
+    über Dinge wie Datenumwandlungen, Quellen und Ziele zu speichern.
+    Bei regelmäßiger Verwendung wird nur eine kleine Anzahl von
+    Tabelleneinträgen erzeugt, und das primäre Datenbankschema
+    wächst selten über einige GB hinaus. Bestimmte Kodex-EE-Plugins
+    (z.B. Klaro oder Konsens) verwenden sekundäre Datenbankschemata
+    zum Speichern von Datenergebnissen, die proportional zu den
+    verarbeiteten Daten wachsen. Kodex-EE kann einen Datenaufbewahrungsplan
+    implementieren und löscht alte Daten, dennoch hängt der benötigte
+    Speicherplatz von der Menge der verarbeiteten Daten ab. Bitte
+    beachten Sie, dass die Leistung auch abnehmen kann, wenn sehr
+    große Datenmengen verarbeitet werden. Alle Datenschemata von
+    Kodex-EE sind jedoch so ausgelegt, dass sie Milliarden von
+    Datenzeilen ohne nennenswerte Probleme verarbeiten können,
+    vorausgesetzt, es wurde eine angemessene Hardware für die
+    Datenbanken bereitgestellt.
+  en: >-
+    Kodex-EE uses a primary database schema to store meta-data
+    about things like data transformations, sources and destinations.
+    For regular usage, only a small number of table entries are
+    generated, and the primary database schema rarely grows beyond
+    a few GB. Specific Kodex-EE plugins (e.g. Klaro or Konsens)
+    use secondard database schemas to store data results, which
+    grow in proportion to the processed data. Kodex-EE can implement
+    a data retention schedule and will delete old data, nevertheless
+    the required storage will depend on the amount of data processed.
+    Please note that performance may also degrade if very large
+    amounts of data are being processed. All Kodex-EE data schemas
+    are designed to handle billions of rows of data without significant
+    problems though, provided adequate hardware has been provisioned
+    for the databases.
+e828a6590665414a:
+  de: '## Metriken'
+  en: <md-heading v="##">Metrics</md-heading>
+ef4358dd8955e6c7:
+  de: >-
+    Die angegebenen Mindestversionen von Diensten sind die, mit
+    denen Kodex-EE getestet und eingesetzt wird. Es kann möglich
+    sein, dass es auch mit älteren Versionen läuft, obwohl wir
+    keine Garantien geben können. Das Gleiche gilt für die Verwendung
+    neuerer Versionen dieser Dienste.
+  en: >-
+    The given minimum versions of services are what Kodex-EE is
+    tested and deployed against, it might be possible to run it
+    with older versions as well, though we cannot make any guarantees.
+    The same is true when using newer versions of these services.
+ef7f24acce7175a3:
+  de: '### CPU'
+  en: <md-heading v="###">CPU</md-heading>
+fbd2abb0e17c78ea:
+  de: >-
+    Dadurch wird eine bloße Einstellungsdatei erzeugt, die Sie
+    ändern können.
+  en: This will generate a bare settings file you can modify.
+fdfb9b12547c0d07:
+  de: >-
+    Kodex-EE benötigt mehrere externe Dienste, um zu funktionieren:
+  en: 'Kodex-EE requires several external services to function:'

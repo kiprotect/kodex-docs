@@ -1,0 +1,37 @@
+# Warning, this is an auto-generated file, do not modify!
+# Modify this file instead: site-all.yml
+pages:
+- name: ''
+  navtitle: Übersicht
+  src: common/index.html
+  title: Kodex Dokumentation
+- name: installation
+  navtitle: Installation
+  slug: installation
+  src: de/installation.md
+  title: Installation
+- children:
+  - name: index
+    navtitle: Übersicht
+    slug: uebersicht
+    src: de/cli/index.md
+    title: Übersicht
+  name: cli
+  navtitle: Befehlszeilenschnittstelle (CLI)
+  slug: befehlszeilenschnittstelle-cli
+  title: Befehlszeilenschnittstelle (CLI)
+- children:
+  - name: index
+    navtitle: Übersicht
+    slug: uebersicht
+    src: de/actions/index.md
+    title: Übersicht
+  name: actions
+  navtitle: Aktionen
+  slug: aktionen
+  title: Aktionen
+- name: blueprints
+  navtitle: Blaupausen
+  src: de/blueprints.md
+  title: Blaupausen
+title: Kodex Docs

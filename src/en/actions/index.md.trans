@@ -1,0 +1,197 @@
+0438acfb17699c32:
+  de: "Aktionen sind die Art und Weise, wie Kodex Daten transformiert\
+    \ oder analysiert. Aktionen k\xF6nnen einzeln oder als Sequenz\
+    \ aufgerufen werden, wobei jede Aktion das Ergebnis der vorhergehenden\
+    \ Aktion erh\xE4lt. Die folgenden Abschnitte beschreiben die\
+    \ verschiedenen Aktionstypen, die derzeit von Kodex unterst\xFC\
+    tzt werden."
+  en: >-
+    Actions are how Kodex transforms or analyzes data. Actions
+    can be called individually or as a sequence, in which each
+    action will receive the result of the previous action. The
+    following sections describe the different action types that
+    Kodex currently supports.
+05d93deabff2eb7f:
+  de: '        </p>'
+  en: '        </p>'
+0fdee2bf261ddda1:
+  de: "## Verschl\xFCsselung"
+  en: <md-heading v="##">Encryption</md-heading>
+10eaaf46cf8dae82:
+  de: '    <div class="message-body">'
+  en: '    <div class="message-body">'
+1ac2be2106095c10:
+  de: '## Verwaltung von Genehmigungen'
+  en: <md-heading v="##">Consent Management</md-heading>
+24d8cc9d4caddd26:
+  de: "Audit-Protokollierungsaktionen erm\xF6glichen es Ihnen,\
+    \ den Datenfluss von Einzelpersonen durch Ihre gesamte Datenverarbeitungsinfrastruktur\
+    \ zu verfolgen. Sie erzeugen pseudonyme, durchsuchbare Informationen\
+    \ dar\xFCber, wie Daten, die zu einer bestimmten Person geh\xF6\
+    ren, verarbeitet wurden und wohin sie gesendet wurden, so\
+    \ dass Sie diese Daten z.B. abrufen, \xE4ndern oder l\xF6\
+    schen k\xF6nnen."
+  en: >-
+    Audit logging actions enable you to trace the flow of data
+    from individuals through your entire data processing infrastructure.
+    They produce pseudonymous, searchable information about how
+    data belonging to a specific individual was processed and
+    where it was sent to, allowing you to e.g. retrieve, amend
+    or delete this data.
+36aed19e7c8bd49c:
+  de: "            Dieser Abschnitt befindet sich noch im Aufbau\
+    \ und ist unvollst\xE4ndig. Wir entschuldigen uns f\xFCr die\
+    \ Unannehmlichkeiten."
+  en: >2-
+                This section is still under construction and incomplete.
+    We apologize for the inconvenience.
+370f7532c0f82583:
+  de: '## Entdeckung'
+  en: <md-heading v="##">Discovery</md-heading>
+396bd02963a1d71b:
+  de: "Anonymisierungsma\xDFnahmen verwenden statistische Techniken,\
+    \ um Daten zu erzeugen, aus denen es nicht m\xF6glich sein\
+    \ sollte, bestimmte Personen zu identifizieren oder auf nicht-triviale\
+    \ Informationen \xFCber diese Personen zu schlie\xDFen. Kodex\
+    \ st\xFCtzt sich auf Randomisierung und Aggregation als Anonymit\xE4\
+    tsmechanismen und produziert anonyme Daten, die modernen Anonymit\xE4\
+    tsstandards wie dem \"differentiellen Datenschutz\" entsprechen."
+  en: >-
+    Anonymization actions use statistical techniques to produce
+    data from which it it should not be possible to identify any
+    specific individuals or infer any non-trivial information
+    about these individual. Kodex relies on randomization and
+    aggregation as anonymity mechanisms and produces anonymous
+    data that conforms to modern anonymity standards like "differential
+    privacy".
+53169f0eb4aed6ba:
+  de: "## Identifizierung und Identit\xE4tsmanagement"
+  en: >-
+    <md-heading v="##">Identification & Identity Management</md-heading>
+55a7edb970a02ada:
+  de: '# Aktionen'
+  en: <md-heading v="#">Actions</md-heading>
+6cca9541a6802b7a:
+  de: '## Pseudonymisierung'
+  en: <md-heading v="##">Pseudonymization</md-heading>
+77b94bee250b4d16:
+  de: "Identifizierungs- und Identit\xE4tsmanagement-Aktionen\
+    \ erm\xF6glichen es Ihnen, Personen anhand verschiedener direkter\
+    \ oder indirekter Identifikatoren zu identifizieren und jeder\
+    \ Person eine dauerhafte pseudonyme ID zuzuordnen. So k\xF6\
+    nnen Sie z.B. Datenelemente aus verschiedenen Quellen einer\
+    \ einzigen Person zuordnen und die pseudonyme ID dieser Person\
+    \ verwenden, um z.B. anonyme oder pseudonyme Daten zu erzeugen\
+    \ oder die Zustimmung dieser Person zu einem bestimmten Datenverarbeitungszweck\
+    \ zu \xFCberpr\xFCfen."
+  en: >-
+    Identification & identity management actions enable you to
+    identify individuals based on various direct or indirect identifiers,
+    and associate a permanent pseudonymous ID to every individual.
+    This allows you to e.g. attribute data items from different
+    sources to a single individual and use the pseudonymous ID
+    of that individual to e.g. produce anonymous or pseudonymous
+    data or verify the consent of that individual for a given
+    data processing purpose.
+7c2887db3205bfcc:
+  de: "Die Verschl\xFCsselung erzeugt Daten, die statistisch nicht\
+    \ von zuf\xE4lligem Rauschen unterscheidbar sind und die nur\
+    \ mit Kenntnis eines geheimen Verschl\xFCsselungsschl\xFC\
+    ssels entschl\xFCsselt werden k\xF6nnen. Kodex setzt standardm\xE4\
+    \xDFige symmetrische und asymmetrische Verschl\xFCsselungstechniken\
+    \ ein."
+  en: >-
+    Encryption produces data that is statistically indistinguishable
+    from random noise and that can be decrypted only with knowledge
+    of a secret encryption key. Kodex implements standard symmetric
+    and asymmetric encryption techniques.
+7d805f0ae8f125c4:
+  de: '## Anonymisierung'
+  en: <md-heading v="##">Anonymization</md-heading>
+7dc8d37d8f9fb3c6:
+  de: '    </div>'
+  en: '    </div>'
+860ca9ec03dc6f31:
+  de: '        <p>'
+  en: '        <p>'
+b6d1f3e43b79acf1:
+  de: "Mit Aktionen zur Verwaltung der Einwilligung k\xF6nnen\
+    \ Sie \xFCberpr\xFCfen, ob eine bestimmte Person ihre Einwilligung\
+    \ zu einem bestimmten Datenverarbeitungszweck gegeben hat.\
+    \ Zusammen mit den Identifizierungs- und Identit\xE4tsmanagement-Aktionen\
+    \ erm\xF6glichen sie es Ihnen, konforme Datenverarbeitungs-Workflows\
+    \ aufzubauen und z.B. Daten von Personen, die ihre Einwilligung\
+    \ zu einem bestimmten Verarbeitungszweck nicht gegeben oder\
+    \ zur\xFCckgezogen haben, zu unterdr\xFCcken."
+  en: >-
+    Consent management actions enable you to verify that a given
+    individual has given consent for a specific data processing
+    purpose. Together with the identification & identity management
+    actions they enable you to build compliant data processing
+    workflows and e.g. surpress data from individuals that have
+    not given or withdrawn their consent for a specific processing
+    purpose.
+d25288b1b9799273:
+  de: '## Audit-Protokollierung'
+  en: <md-heading v="##">Audit Logging</md-heading>
+d7a750956fc8a626:
+  de: "Bitte beachten Sie, dass wir Verschl\xFCsselungsmethoden,\
+    \ die bei identischen Eingabedaten und Verschl\xFCsselungsschl\xFC\
+    ssel(n) den gleichen Geheimtext erzeugen, als Pseudonymisierungsmethoden\
+    \ betrachten, da die resultierenden Daten (absichtlich) nicht\
+    \ den modernen Sicherheitsstandards f\xFCr Verschl\xFCsselungsmethoden\
+    \ entsprechen. Daher werden formaterhaltende Verschl\xFCsselungsmethoden,\
+    \ die ohne zuf\xE4llige Initialisierungsvektoren (IV) arbeiten,\
+    \ bei diesem Ansatz ebenfalls als Pseudonymisierungsmethoden\
+    \ betrachtet."
+  en: >-
+    Please note that we consider encryption methods which produce
+    the same ciphertext when given identical input data and encryption
+    key(s) as pseudonymization methods, as the resulting data
+    does (intentionally) not conform to modern security standards
+    for encryption methods. Therfore, format-preserving encryption
+    methods that operate without random initialization vectors
+    (IV) are also considered pseudonymization methods under this
+    approach.
+dad80e965e3070c1:
+  de: </article>
+  en: </article>
+df9f05a7688939ad:
+  de: "Die Pseudonymisierung erzeugt Daten, die nicht mehr direkt\
+    \ einer bestimmten Person zugeordnet werden k\xF6nnen. Die\
+    \ Verwendung pseudonymisierter Daten senkt das Risiko der\
+    \ Datenverarbeitung f\xFCr Einzelpersonen und verringert die\
+    \ Auswirkungen von Datenverlust oder Datendiebstahl. Sie kann\
+    \ sowohl auf direkte oder indirekte Identifikatoren als auch\
+    \ auf eine Vielzahl von strukturierten Datentypen wie Zahlen,\
+    \ Daten, Namen oder IP-Adressen angewandt werden. Einige Pseudonymisierungsmethoden\
+    \ basieren auf einer reversiblen Verschl\xFCsselung, die es\
+    \ erm\xF6glicht, die Daten bei Kenntnis des Schl\xFCssels\
+    \ wieder zu de-pseudonymisieren. Andere Methoden wie Hashing\
+    \ sind nicht umkehrbar."
+  en: >-
+    Pseudonymization produces data that is no longer directly
+    attributable to a specific individual. Using pseudonymous
+    data lowers the risk of data processing for individuals and
+    reduces the impact of data loss or data theft. It can be applied
+    to direct or indirect identifiers as well as to a wide range
+    of structured data types like numbers, dates, names or IP
+    addresses. Some pseudonymization methods are based on reversible
+    encryption, which makes it possible to de-pseudonymize the
+    data again given knowledge of the key. Other methods like
+    hashing are non-reversible.
+e3b0c44298fc1c14:
+  de: ''
+  en: ''
+ff5e8ab0a1b470b0:
+  de: <article class="message is-danger">
+  en: <article class="message is-danger">
+ffbc1465475b48f4:
+  de: "Discovery-Aktionen erm\xF6glichen es Ihnen, verschiedene\
+    \ Arten von pers\xF6nlichen oder sensiblen Informationen in\
+    \ Ihren strukturierten und unstrukturierten Datenelementen\
+    \ aufzusp\xFCren."
+  en: >-
+    Discovery actions enable you to detect different types of
+    personal or sensitive information in your structured and unstructured
+    data items.

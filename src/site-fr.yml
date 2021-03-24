@@ -1,0 +1,26 @@
+# Warning, this is an auto-generated file, do not modify!
+# Modify this file instead: site-all.yml
+pages:
+- name: ''
+  navtitle: Vue d'ensemble
+  src: en/index.html
+  title: Documentation KIProtect
+- children:
+  - children: []
+    name: cli
+    navtitle: Interface de ligne de commande (CLI)
+    slug: interface-de-ligne-de-commande-cli
+    title: Interface de ligne de commande (CLI)
+  - children: []
+    name: actions
+    navtitle: Actions
+    slug: actions
+    title: Actions
+  name: kodex
+  slug: kodex
+  title: Kodex
+- children: []
+  name: klaro
+  slug: klaro
+  title: Klaro
+title: KIProtect Docs

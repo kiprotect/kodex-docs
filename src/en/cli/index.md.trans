@@ -1,0 +1,245 @@
+03f575af74621fcd:
+  de: "* St\xF6bern Sie im [Aktionskatalog]({{'kodex.actions.index'|href}}),\
+    \ um sich \xFCber die verschiedenen Ma\xDFnahmen zur Verbesserung\
+    \ von Privatsph\xE4re und Sicherheit zu informieren, die der\
+    \ Kodex anbietet."
+  en: >-
+    <md-list v="*">Browse the <md-link href="PGlnbm9yZSB2PSJlM3NuYTI5a1pYZ3VZV04wYVc5dWN5NXBibVJsZUNkOGFISmxabjE5IiAvPg==">action
+    catalogue</md-link> to learn about all the different privacy-
+    & security-enhancing actions that Kodex offers.</md-list>
+0a024693905ef05d:
+  de: "* Schauen Sie sich die [Dokumentation zu den Blaupausen]({{'kodex.blueprints'|href}})\
+    \ an, um zu erfahren, wie Sie mit Kodex Ihre eigenen Blaupausen\
+    \ zum Thema Datenschutz und Sicherheit schreiben k\xF6nnen."
+  en: >-
+    <md-list v="*">Check out the <md-link href="PGlnbm9yZSB2PSJlM3NuYTI5a1pYZ3VZbXgxWlhCeWFXNTBjeWQ4YUhKbFpuMTkiIC8-">blueprints
+    documentation</md-link> to learn how to write your own privacy
+    & security blueprints with Kodex.</md-list>
+0ba5ea9cb632c899:
+  de: </aside>
+  en: </aside>
+126b139d4b9dd4a3:
+  de: "Zun\xE4chst m\xFCssen Sie das Kodex CLI-Tool herunterladen\
+    \ oder erstellen. Auf unserer [Website]({{'urls.download'|translate}})\
+    \ k\xF6nnen Sie vorkompilierte Bin\xE4rdateien f\xFCr verschiedene\
+    \ Plattformen herunterladen. Alternativ k\xF6nnen Sie das\
+    \ Tool aus dem Quellcode erstellen, indem Sie den Anweisungen\
+    \ auf unserer [Github-Seite](https://github.com/kiprotect/kodex)\
+    \ folgen."
+  en: >-
+    First, you need to download or build the Kodex CLI tool. You
+    can download pre-built binaries for various platforms on our
+    <md-link href="PGlnbm9yZSB2PSJlM3NuZFhKc2N5NWtiM2R1Ykc5aFpDZDhkSEpoYm5Oc1lYUmxmWDA9IiAvPg==">website</md-link>.
+    Alternatively, you can build the tool from source by following
+    the instructions on our <md-link href="aHR0cHM6Ly9naXRodWIuY29tL2tpcHJvdGVjdC9rb2RleA==">Github
+    page</md-link>.
+1cbba3ff398190cd:
+  de: '## Haben Sie Fragen?'
+  en: <md-heading v="##">Questions?</md-heading>
+1fbedcf7da8e14b3:
+  de: "Haben Sie Fragen zum Kodex? Sie k\xF6nnen Folgendes tun:"
+  en: >-
+    Do you have questions regarding Kodex? You can do the following:
+336c3963e1940aa6:
+  de: '# Befehlszeilenschnittstelle (CLI)'
+  en: <md-heading v="#">Command Line Interface (CLI)</md-heading>
+4e5c8de8f9bed084:
+  de: "Die Kodex-Befehlszeilenschnittstelle (CLI) ist der einfachste\
+    \ Weg, um mit dem Datenschutz und der Sicherheitstechnik zu\
+    \ beginnen. Sie erm\xF6glicht es Ihnen, eine breite Palette\
+    \ von datenschutz- und sicherheitsf\xF6rdernden Transformationen\
+    \ sowie Analysen Ihrer strukturierten Daten durchzuf\xFChren."
+  en: >-
+    The Kodex command line interface (CLI) is the easiest way
+    to get started with privacy and security engineering. It enables
+    you to run a wide range of privacy- & security-enhancing transformations
+    as well as analyses on your structured data.
+4ebd96999a97120d:
+  de: "die die depseudonymisierten Daten (die genau mit den Eingabedaten\
+    \ \xFCbereinstimmen sollten) ausdrucken wird. Wenn Sie selbst\
+    \ einen Pseudonymisierungsschl\xFCssel mit der Taste `pseudonymize-with-key`,\
+    \ angegeben haben, k\xF6nnen Sie stattdessen `depseudonymize-with-key`\
+    \ blueprint ausf\xFChren, das Sie zur Eingabe des Pseudonymisierungsschl\xFC\
+    ssels auffordert. Ist das nicht einfach?"
+  en: >-
+    which will print the depseudonymized data (which should exactly
+    match the input data). If you provided a pseudonymization
+    key yourself by using the <md-code>pseudonymize-with-key</md-code>,
+    you can run <md-code>depseudonymize-with-key</md-code> blueprint
+    instead, which will ask you to enter the pseudonymization
+    key. Isn't that easy?
+54d45dda4d301796:
+  de: "Irgendwann m\xF6chten Sie Ihre Daten vielleicht tats\xE4\
+    chlich wieder depseudonymisieren. Kodex macht dies einfach,\
+    \ indem er eine `undo` Aktion zur Verf\xFCgung stellt, die\
+    \ auf reversible Transformationen wie die oben beschriebene\
+    \ kryptografische Pseudonymisierung angewendet werden kann.\
+    \ Um also die oben genannten Daten zu depseudonymisieren,\
+    \ k\xF6nnen wir einfach eine Blaupause ausf\xFChren, die eine\
+    \ solche `undo` Aktion enth\xE4lt:"
+  en: >-
+    At some point you might actually want to depseudonymize your
+    data again. Kodex makes this easy by providing an <md-code>undo</md-code>
+    action that can be applied to reversible transformations like
+    the cryptographic pseudonymization above. So, to depseudonymize
+    the data above, we can simply run a blueprint that contains
+    such an <md-code>undo</md-code> action:
+5bda3a0e051f71fa:
+  de: >-
+    Dadurch wird die Konfiguration aus der Blaupausendatei (`pseudonymize.yml`)
+    geladen. Diese Datei gibt an, woher die Daten gelesen werden
+    sollen (in diesem Fall eine JSON-Datei), wie die Daten transformiert
+    werden sollen (in diesem Fall unter Verwendung einer Pseudonymisierung)
+    und wohin die resultierenden Ausgabedaten gesendet werden
+    sollen (wieder eine JSON-Datei).
+  en: >-
+    This will load the configuration from the blueprint file (<md-code>pseudonymize.yml</md-code>).
+    This file specifies from where data should be read (a JSON
+    file in this case), how the data should be transformed (using
+    a pseudonymization in this case) and where the resulting output
+    data should be sent to (a JSON file again).
+65a99ba9c06af0e8:
+  de: "Jetzt, da Sie die Grundlagen des Kodex CLI-Tools kennen,\
+    \ k\xF6nnen Sie mehr ins Detail gehen. Hier ist, was Sie tun\
+    \ k\xF6nnen:"
+  en: >-
+    Now that you know the basics of the Kodex CLI tool, you can
+    dive more into the details. Here's what you can do:
+70579e6e5ed63a7e:
+  de: "Wie Sie sehen k\xF6nnen, pseudonymisierte Kodex jedes Attribut\
+    \ in jedem Datenelement und f\xFCgte auch ein neues Attribut,\
+    \ `_kip`, zu den Elementen hinzu. Der Wert dieses Attributs\
+    \ bezieht sich auf einen Parametersatz, der die kryptografischen\
+    \ Schl\xFCssel enth\xE4lt, die zur Transformation der Daten\
+    \ verwendet wurden. Die eigentlichen Schl\xFCssel werden in\
+    \ einem so genannten Parameterspeicher gespeichert. Wenn Sie\
+    \ das nicht w\xFCnschen, k\xF6nnen Sie die Schl\xFCssel auch\
+    \ selbst verwalten: Die `pseudonymize-with-key` Blaupause\
+    \ im gleichen Verzeichnis tut dies, indem sie Sie zun\xE4\
+    chst zur Eingabe eines Schl\xFCssels auffordert und diesen\
+    \ Schl\xFCssel dann verwendet, um weitere Verschl\xFCsselungsschl\xFC\
+    ssel f\xFCr die einzelnen Pseudonymisierungsoperationen abzuleiten.\
+    \ Die Verwaltung von Schl\xFCsseln und Parametern ist an sich\
+    \ schon ein komplexes Thema, denn jetzt k\xF6nnen Sie sicher\
+    \ sein, dass Kodex sich um die schmutzigen Details f\xFCr\
+    \ Sie k\xFCmmert."
+  en: >-
+    As you can see, Kodex pseudonymized every attribute in every
+    data item and also added a new attribute, <md-code>_kip</md-code>,
+    to the items. The value of that attribute refers to a parameter
+    set that contains the cryptographic keys that were used to
+    transform the data. The actual keys are stored in a so-called
+    parameter store. If you don't want that, you can also manage
+    keys yourself as well: The <md-code>pseudonymize-with-key</md-code>
+    blueprint in the same directory does that by first asking
+    you to enter a key and then using that key to derive further
+    encryption keys for the individual pseudonymization operations.
+    Key & parameter management is a complex topic in itself, for
+    now just rest assured that Kodex takes care of the messy details
+    for you.
+7c579e68435e960b:
+  de: >-
+    * [Schreiben Sie uns eine E-Mail](mailto:cli@kiprotect.com)
+    mit Ihrer Frage.
+  en: >-
+    <md-list v="*"><md-link href="bWFpbHRvOmNsaUBraXByb3RlY3QuY29t">Write
+    us an e-mail</md-link> with your question.</md-list>
+84232f72dd532434:
+  de: '## Installieren der Kodex CLI'
+  en: <md-heading v="##">Installing Kodex CLI</md-heading>
+846a025e3d7c0bdd:
+  de: '## Erste Schritte'
+  en: <md-heading v="##">Getting started</md-heading>
+8c801befdd114847:
+  de: "## N\xE4chste Schritte"
+  en: <md-heading v="##">Next steps</md-heading>
+995244431dffd1a6:
+  de: "* [\xD6ffnen Sie ein Github <tr-ignore>Issue</tr-ignore>](https://github.com/kiprotect/kodex),\
+    \ um unsere gro\xDFartige Open-Source-Gemeinschaft um Hilfe\
+    \ zu bitten."
+  en: >-
+    <md-list v="*"><md-link href="aHR0cHM6Ly9naXRodWIuY29tL2tpcHJvdGVjdC9rb2RleA==">Open
+    a Github <tr-ignore>Issue</tr-ignore></md-link> to ask our
+    awesome open-source community for help.</md-list>
+9ae7e8939b9fbb6d:
+  de: "Um eine Blaupause auszuf\xFChren, f\xFChren Sie einfach\
+    \ `kodex run [blueprint name]`. Der Kodex wird mit einer kostenlosen,\
+    \ \xF6ffentlichen Sammlung von Beispiel-Entw\xFCrfen geliefert,\
+    \ die uns den Einstieg erleichtern. Wir k\xF6nnen sie auch\
+    \ \xFCber die Befehlszeile herunterladen und installieren:"
+  en: >-
+    To run a blueprint, you simply execute <md-code>kodex run
+    <md-link>blueprint name</md-link></md-code>. Kodex comes with
+    a free, public repository of example blueprints that help
+    us to get started. We can download and install them via the
+    command line as well:
+a1bfcf0b18e31ee1:
+  de: "Standardm\xE4\xDFig steuern wir das CLI-Tool \xFCber so\
+    \ genannte **Blueprints**. Ein Blueprint ist eine Konfigurationsdatei\
+    \ (oder eine Sammlung davon), die beschreibt, wie Kodex strukturierte\
+    \ Daten lesen, analysieren, transformieren und schreiben soll."
+  en: >-
+    By default, we control the CLI tool using so-called <md-strong>blueprints</md-strong>.
+    A blueprint is a config file (or a collection of them) that
+    describes how Kodex should read, analyze, transform and write
+    structured data.
+a32bc9b5d9941c43:
+  de: "    Die Elemente in der <code>input.json</code> Datei,\
+    \ die wir pseudonymisieren m\xF6chten."
+  en: >2-
+        The items in the <code>input.json</code> file that we
+    want to pseudonymize.
+aac32651b10f567c:
+  de: </div>
+  en: </div>
+c5308e9f6826a176:
+  de: >-
+    * Schauen Sie das [Blaupausen-Repository](https://github.com/kiprotect/blueprints)
+    durch, um zu sehen, wie ein bestimmtes Problem mit dem Kodex
+    angegangen werden kann.
+  en: >-
+    <md-list v="*">Look through the <md-link href="aHR0cHM6Ly9naXRodWIuY29tL2tpcHJvdGVjdC9ibHVlcHJpbnRz">blueprints
+    repository</md-link> to see how to tackle a specific problem
+    with Kodex.</md-list>
+d08b7612ce380eae:
+  de: "Der von uns gew\xE4hlte Beispiel-Entwurf liest Datenelemente\
+    \ aus einer `input.json` Datei, die sich im gleichen Verzeichnis\
+    \ wie der Entwurf befindet, pseudonymisiert alle Attribute\
+    \ jedes Elements unter Verwendung verschiedener anwendbarer\
+    \ Pseudonymisierungsmethoden und schreibt die pseudonymisierten\
+    \ Daten in eine JSON-Datei (`pseudonymized.json`) im aktuellen\
+    \ Verzeichnis. So sieht die Ausgabe aus:"
+  en: >-
+    The example blueprint that we picked will read data items
+    from an <md-code>input.json</md-code> file located in the
+    same directory as the blueprint, pseudonymize all attributes
+    of each item using different applicable pseudonymization methods,
+    and write the pseudonymized data to a JSON file (<md-code>pseudonymized.json</md-code>)
+    in the current directory. Here's what the output looks like:
+d57b61a3ce04ba83:
+  de: <aside>
+  en: <aside>
+dbce359dcb2f7a1f:
+  de: "Dadurch wird unser \xF6ffentliches [Blaupausen-Repository](https://github.com/kiprotect/blueprints)\
+    \ heruntergeladen und in einem lokalen Verzeichnis gespeichert\
+    \ (standardm\xE4\xDFig `~/.kodex/blueprints`). Sie k\xF6nnen\
+    \ dann jede Blaupause ausf\xFChren, indem Sie einfach ihren\
+    \ Pfad relativ zum Blaupausen-Verzeichnis angeben. Lassen\
+    \ Sie uns also ein einfaches Beispiel ausf\xFChren, das zeigt,\
+    \ wie Kodex verschiedene Datentypen pseudonymisieren kann:"
+  en: >-
+    This will download our public <md-link href="aHR0cHM6Ly9naXRodWIuY29tL2tpcHJvdGVjdC9ibHVlcHJpbnRz">blueprints
+    repository</md-link> and store it in a local directory (by
+    default <md-code>~/.kodex/blueprints</md-code>). You can then
+    run any blueprint by simply specifying its path relative to
+    the blueprints directory. So let's run a simple example that
+    shows how Kodex can pseudonymize different data types:
+e3b0c44298fc1c14:
+  de: ''
+  en: ''
+e5814d637b816b52:
+  de: '### Depseudonymisierung von Daten'
+  en: <md-heading v="###">Depseudonymizing data</md-heading>
+f5280ef03c25ba4e:
+  de: <div class="highlight">
+  en: <div class="highlight">

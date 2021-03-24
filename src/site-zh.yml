@@ -1,0 +1,26 @@
+# Warning, this is an auto-generated file, do not modify!
+# Modify this file instead: site-all.yml
+pages:
+- name: ''
+  navtitle: "\u6982\u8FF0"
+  src: en/index.html
+  title: "KIProtect \u6587\u6863"
+- children:
+  - children: []
+    name: cli
+    navtitle: "\u547D\u4EE4\u884C\u754C\u9762(CLI)"
+    slug: cli
+    title: "\u547D\u4EE4\u884C\u754C\u9762(CLI)"
+  - children: []
+    name: actions
+    navtitle: "\u884C\u52A8"
+    slug: actions
+    title: "\u884C\u52A8"
+  name: kodex
+  slug: kodex
+  title: Kodex
+- children: []
+  name: klaro
+  slug: klaro
+  title: Klaro
+title: KIProtect Docs

@@ -1,0 +1,37 @@
+# Warning, this is an auto-generated file, do not modify!
+# Modify this file instead: site-all.yml
+pages:
+- name: ''
+  navtitle: Overview
+  src: common/index.html
+  title: Kodex Documentation
+- name: installation
+  navtitle: Installation
+  slug: installation
+  src: en/installation.md
+  title: Installation
+- children:
+  - name: index
+    navtitle: Overview
+    slug: overview
+    src: en/cli/index.md
+    title: Overview
+  name: cli
+  navtitle: Command Line Interface (CLI)
+  slug: command-line-interface-cli
+  title: Command Line Interface (CLI)
+- children:
+  - name: index
+    navtitle: Overview
+    slug: overview
+    src: en/actions/index.md
+    title: Overview
+  name: actions
+  navtitle: Actions
+  slug: actions
+  title: Actions
+- name: blueprints
+  navtitle: Blueprints
+  src: en/blueprints.md
+  title: Blueprints
+title: Kodex Docs

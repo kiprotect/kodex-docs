@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html {%if lang %}lang="{{lang}}"{%endif%}>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  {%if author %}<meta name="author" content="{{author}}">{% endif %}
+  {%if keywords %}<meta name="keywords" content="{{keywords|join(',')}}">{% endif %}
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{'hp.site-title'|translate}}{% if title is defined %} | {{title}}{%endif%}</title>
+  <link rel="stylesheet" type="text/css" href="{{'css/main.css'|file}}">
+  {% block klaro %}
+  {% if env == 'development' %}
+  <script defer type="application/javascript" src="http://localhost:8081/klaro.js" crossorigin="anonymous" data-klaro-config="{{klaro_config_name}}"></script>
+  {% else %}
+  <script defer type="application/javascript" src="https://api.kiprotect.com/v1/privacy-managers/39cd5ca70a9386e1510002594fc54bbb/klaro.js" crossorigin="anonymous" data-klaro-config="{{klaro_config_name or 'default'}}"></script>
+  {% endif %}
+  {% endblock klaro %}
+  {%filter highlight_styles%}{%endfilter%}
+  {% block head %}{% endblock head %}
+</head>
+<body>
+
+  <nav class="navbar is-dark">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="{{''|href}}">
+        {{page.title or language.title}}
+      </a>
+      <span class="navbar-burger burger" data-target="side-menu" data-toggle="collapse">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+    </div>
+
+  </nav>
+
+  <div class="main">
+    {% block mobile_side_menu %}    
+    <div class="side-menu" id="side-menu" data-toggle-class="is-active">
+      <aside class="menu">
+        <p class="menu-label">
+            <a href="https://heykodex.com">
+                <img style="max-height: 60px" src="{{'images/logos/kodexlogo-blue.png'|file}}" />
+            </a>
+            <br />
+            <a href="{{''|href}}">
+                {{'hp.site-title'|translate}}
+            </a>
+        </p>
+        {% block extra_nav %}{% endblock %}
+        {% include "_side_menu.html" %}
+      </aside>
+    </div>
+    {% endblock %}
+    {% block main %}
+      <section class="section first {%block section_class%}{%endblock%}">
+        {% block content %}{% endblock %}
+      </section>
+    {% endblock %}
+  </div>
+  <script defer type="text/javascript" src="{{'js/bulma.js'|file}}"></script>
+</body>
+</html>

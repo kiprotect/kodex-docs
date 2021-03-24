@@ -1,0 +1,30 @@
+{
+  "name": "kiprotect-docs",
+  "version": "0.0.1",
+  "description": "our documentation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/kiprotect/docs.git"
+  },
+  "author": "",
+  "license": "Proprietary",
+  "bugs": {
+    "url": "https://github.com/kiprotect/docs/issues"
+  },
+  "homepage": "https://github.com/kiprotect/docs#README",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-minify": "^0.4.3",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "node-sass": "^5.0.0"
+  },
+  "dependencies": {
+    "n": "^6.7.1"
+  }
+}
