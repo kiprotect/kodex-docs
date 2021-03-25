@@ -97,9 +97,7 @@ hp:
       >ein Problem</a> oder <a href=\"mailto:docs@kiprotect.com\"\
       >nehmen Sie Kontakt mit uns</a> auf, wir hören gerne von\
       \ Ihnen! "
-    en: "Welcome to the Kodex documentation! This site contains\
-      \ information about the core concepts, products and solutions\
-      \ that we offer. If you find a mistake or if you want to\
-      \ make a suggestion, please either <a href=\"https://github.com/kiprotect/docs/issues\"\
-      >open an issue</a> or <a href=\"mailto:docs@kiprotect.com\"\
+    en: "Welcome to the Kodex documentation! If you find a mistake or if you want to\
+      \ make a suggestion, please either <a href=\"https://github.com/kiprotect/kodex-docs/issues\"\
+      >open an issue</a> or <a href=\"mailto:kodex@kiprotect.com\"\
       >get in touch with us</a>, we love to hear from you! "
