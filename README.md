@@ -1,6 +1,6 @@
 # KIProtect Documentation
 
-These files are used to build the documentation at https://kiprotect.com/docs.
+These files are used to build the documentation at https://heykodex.com/docs/.
 
 ## Setting up the environment
 
