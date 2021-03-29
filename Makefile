@@ -46,7 +46,7 @@ clean:
 	rm -rf build/*
 
 serve:
-	python3 -m http.server -d build 8111
+	python3 -m http.server -d build 8112
 
 watch: site
 	./watch.sh
