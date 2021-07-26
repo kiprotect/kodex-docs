@@ -87,17 +87,17 @@ hp:
       that we can fix the translation.
   welcome:
     _t:
-      de: edf2b07f0f0334d2
-      en: edf2b07f0f0334d2
-    de: "Willkommen bei der Kodex-Dokumentation! Diese Seite enthält\
-      \ Informationen über die Kernkonzepte, Produkte und Lösungen,\
-      \ die wir anbieten. Wenn Sie einen Fehler finden oder einen\
-      \ Vorschlag machen möchten, <a href=\"https://github.com/kiprotect/docs/issues\"\
-      >öffnen Sie</a> bitte entweder <a href=\"https://github.com/kiprotect/docs/issues\"\
-      >ein Problem</a> oder <a href=\"mailto:docs@kiprotect.com\"\
-      >nehmen Sie Kontakt mit uns</a> auf, wir hören gerne von\
+      de: c74c859ee6ef1d1a
+      en: c74c859ee6ef1d1a
+    de: "Willkommen bei der Kodex-Dokumentation! Wenn Sie einen\
+      \ Fehler finden oder einen Vorschlag machen möchten, <a\
+      \ href=\"https://github.com/kiprotect/kodex-docs/issues\"\
+      >öffnen Sie</a> bitte entweder <a href=\"https://github.com/kiprotect/kodex-docs/issues\"\
+      >ein Problem</a> oder setzen <a href=\"mailto:kodex@kiprotect.com\"\
+      >Sie sich mit uns</a> in Verbindung, wir hören gerne von\
       \ Ihnen! "
-    en: "Welcome to the Kodex documentation! If you find a mistake or if you want to\
-      \ make a suggestion, please either <a href=\"https://github.com/kiprotect/kodex-docs/issues\"\
+    en: "Welcome to the Kodex documentation! If you find a mistake\
+      \ or if you want to make a suggestion, please either <a\
+      \ href=\"https://github.com/kiprotect/kodex-docs/issues\"\
       >open an issue</a> or <a href=\"mailto:kodex@kiprotect.com\"\
       >get in touch with us</a>, we love to hear from you! "

@@ -46,21 +46,21 @@ Eine Blaupause enthält im Wesentlichen mindestens vier verschiedene Abschnitte:
 
 ## Ausführen von Blaupausen
 
-Sie können eine bestimmte Blaupause mit dem `run` Befehl ausführen:
+Sie können eine bestimmte Blaupause mit dem Befehl `run` ausführen:
 
 ```
 kodex run [blueprint name]
 ```
 
 
-Wenn Sie den `[blueprint name]` weglassen, sucht Kodex nach einer Datei mit dem Namen `.blueprint.yml` im aktuellen Verzeichnis, die ausgeführt werden soll. Anderenfalls prüft Kodex zunächst, ob Sie einen Speicherort für die Datei eingegeben haben, und lädt dann die Blaupause von dort. Andernfalls durchsucht Kodex alle seine Blaupausen-Verzeichnisse (standardmäßig `~/.kodex/blueprints`) und versucht, die von Ihnen angegebene Blaupause zu finden. Wenn wir zum Beispiel
+Wenn Sie den `[blueprint name]` weglassen, sucht Kodex nach einer Datei mit dem Namen `.blueprint.yml` im aktuellen Verzeichnis, um sie auszuführen. Andernfalls prüft Kodex zunächst, ob Sie einen Dateispeicherort angegeben haben, und lädt den Blueprint von dort, falls ja. Andernfalls geht Kodex alle Verzeichnisse für Blaupausen durch (standardmäßig `~/.kodex/blueprints`) und versucht, die von Ihnen angegebene Blaupause zu finden. Wenn wir zum Beispiel Folgendes ausführen
 
 ```
 kodex run pseudonymization/examples/data-types/pseudonymize
 ```
 
 
-Kodex wird versuchen, eine in einem Unterordner `pseudonymization/examples/data-types` benannte `pseudonymize.yml` Blaupause innerhalb eines der angegebenen Pfade zu finden. Manchmal haben Sie möglicherweise verschiedene Versionen einer Blaupause installiert. Standardmäßig lädt Kodex die neueste Version, die er finden kann. Wenn Sie das nicht wünschen, können Sie mit dem `--version` Flag eine Version angeben:
+Kodex wird versuchen, eine Blaupause mit dem Namen `pseudonymize.yml` in einem Unterordner `pseudonymization/examples/data-types` innerhalb eines der angegebenen Blaupausenpfade zu finden. Es kann vorkommen, dass Sie verschiedene Versionen eines Blueprints installiert haben. Standardmäßig lädt Kodex die neueste Version, die es finden kann. Wenn Sie das nicht möchten, können Sie mit dem Flag `--version` eine Version angeben:
 
 ```
 kodex run my-blueprint --version 0.4.1
@@ -85,7 +85,7 @@ kodex blueprints download https://my.blueprints/repo.zip
 ```
 
 
-Kodex sucht nach einem Verzeichnis mit einer `.blueprints.yml` Datei im ZIP-Archiv und extrahiert dieses Verzeichnis in den Hauptpfad der Blaupausen. Sie können natürlich auch eigene lokale Blaupausen-Repositorys erstellen, stellen Sie nur sicher, dass Sie sie in einen Unterordner eines Blaupausen-Pfades legen und eine `.blueprints.yml` Datei mit folgendem Inhalt erstellen:
+Kodex sucht im ZIP-Archiv nach einem Verzeichnis mit einer `.blueprints.yml` -Datei und entpackt dieses Verzeichnis in den Hauptpfad für Blaupausen. Sie können natürlich auch eigene lokale Blueprint-Repositories erstellen. Stellen Sie nur sicher, dass Sie diese in einem Unterordner eines Blueprints-Pfads ablegen und eine `.blueprints.yml` -Datei mit dem folgenden Inhalt erstellen:
 
 <div class="highlight">
     {%filter highlight(strip=True, language='yaml')%}

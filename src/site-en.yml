@@ -26,6 +26,11 @@ pages:
     slug: overview
     src: en/actions/index.md
     title: Overview
+  - name: form
+    navtitle: Form Action
+    slug: form-action
+    src: en/actions/form.md
+    title: Form Action
   name: actions
   navtitle: Actions
   slug: actions

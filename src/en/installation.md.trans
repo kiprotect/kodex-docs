@@ -50,6 +50,13 @@
     own PostgreSQL schemas for data storage. For stability and
     performance reasons it is advisable to provide separate PostgreSQL
     instances to these.  </md-list>
+1c8e3b595d04238a:
+  de: >-
+    Das war's! Sie können jetzt Blaupausen mit dem CLI-Befehl
+    `kodex` bearbeiten.
+  en: >-
+    That's it! You can now process blueprints with the `kodex`
+    CLI command.
 2b95a6de71e52cc4:
   de: '    kodex-ee install --method docker-compose'
   en: '    kodex-ee install --method docker-compose'
@@ -506,6 +513,25 @@ e455c6dc1d3cefea:
 e828a6590665414a:
   de: '## Metriken'
   en: <md-heading v="##">Metrics</md-heading>
+ea3f4264d970f319:
+  de: >-
+    Um die Enterprise-Edition von Kodex (Kodex-EE) zu installieren,
+    laden Sie zunächst `kodex-ee` von unserem [Webportal](https://app.kiprotect.com)
+    herunter. Die Binärdatei enthält alles, was Sie für die ersten
+    Schritte benötigen. Insbesondere bietet es einen `install`
+    Befehl, der die Installation von Kodex-EE für verschiedene
+    Umgebungen (größtenteils) automatisiert. Um zum Beispiel eine
+    Docker-Compose-Konfiguration mit allen Kodex-Komponenten und
+    den erforderlichen externen Diensten zu erstellen, führen
+    Sie einfach aus
+  en: >-
+    To install the enterprise edition of Kodex (Kodex-EE), first
+    download `kodex-ee` from our [web portal](https://app.kiprotect.com).
+    The binary contains everything you need to get started. Notably,
+    it provides an `install` command that (mostly) automates the
+    installation of Kodex-EE for different environments. For example,
+    to create a Docker compose configuration with all Kodex components
+    and required external services, simply run
 ef4358dd8955e6c7:
   de: >-
     Die angegebenen Mindestversionen von Diensten sind die, mit

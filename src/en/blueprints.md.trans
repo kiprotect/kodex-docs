@@ -5,16 +5,16 @@
   de: </aside>
   en: </aside>
 0d6eefd3708bc760:
-  de: "Privacy & Security Engineering ist komplex: In einem typischen\
-    \ Szenario m\xF6chten wir vielleicht Daten aus einer Vielzahl\
-    \ von Quellen (z.B. einer Datenbank, Datei oder API) lesen\
-    \ und f\xFCr verschiedene Zwecke (z.B. Analyse oder Anomalieerkennung)\
-    \ verarbeiten, die oft unterschiedliche Datentransformationen\
-    \ erfordern. M\xF6glicherweise m\xF6chten wir die Daten auch\
-    \ an verschiedene Ziele senden (z.B. an eine Datenbank oder\
-    \ Nachrichtenwarteschlange). Und schlie\xDFlich m\xF6chten\
-    \ wir all dies vielleicht kontinuierlich tun, w\xE4hrend die\
-    \ Daten produziert werden."
+  de: >-
+    Privacy & Security Engineering ist komplex: In einem typischen
+    Szenario möchten wir vielleicht Daten aus einer Vielzahl von
+    Quellen (z.B. einer Datenbank, Datei oder API) lesen und für
+    verschiedene Zwecke (z.B. Analyse oder Anomalieerkennung)
+    verarbeiten, die oft unterschiedliche Datentransformationen
+    erfordern. Möglicherweise möchten wir die Daten auch an verschiedene
+    Ziele senden (z.B. an eine Datenbank oder Nachrichtenwarteschlange).
+    Und schließlich möchten wir all dies vielleicht kontinuierlich
+    tun, während die Daten produziert werden.
   en: >-
     Privacy & security engineering is complex: In a typical scenario,
     we might want to read data from a variety of sources (e.g.
@@ -28,23 +28,24 @@
   de: '# Blaupausen'
   en: <md-heading v="#">Blueprints</md-heading>
 2b1035470be9bf15:
-  de: "Mit Kodex k\xF6nnen Sie Blaupausen aus so genannten Repositories\
-    \ herunterladen und installieren. Um zum Beispiel unser offizielles\
-    \ Blaupausen-Repository zu erhalten, f\xFChren Sie einfach"
+  de: >-
+    Mit Kodex können Sie Blaupausen aus so genannten Repositories
+    herunterladen und installieren. Um zum Beispiel unser offizielles
+    Blaupausen-Repository zu erhalten, führen Sie einfach
   en: >-
     Kodex lets you download and install blueprints from so-called
     repositories. For example, to get our official blueprints
     repository, simply run
 45c7a4296b1774f9:
-  de: "Eine Blaupause enth\xE4lt im Wesentlichen mindestens vier\
-    \ verschiedene Abschnitte: Aktionen, Quellen, Ziele und Streams.\
-    \ Jeder Stream bezieht sich auf eine oder mehrere Quellen\
-    \ und enth\xE4lt eine oder mehrere Stream-Konfigurationen.\
-    \ Jede Stream-Konfiguration bezieht sich auf eine oder mehrere\
-    \ Aktionen sowie auf ein oder mehrere Ziele. Zusammen sagen\
-    \ diese Primitive dem Kodex, wie Daten durch ihn flie\xDF\
-    en sollen und wie sie analysiert und transformiert werden\
-    \ sollen."
+  de: >-
+    Eine Blaupause enthält im Wesentlichen mindestens vier verschiedene
+    Abschnitte: Aktionen, Quellen, Ziele und Streams. Jeder Stream
+    bezieht sich auf eine oder mehrere Quellen und enthält eine
+    oder mehrere Stream-Konfigurationen. Jede Stream-Konfiguration
+    bezieht sich auf eine oder mehrere Aktionen sowie auf ein
+    oder mehrere Ziele. Zusammen sagen diese Primitive dem Kodex,
+    wie Daten durch ihn fließen sollen und wie sie analysiert
+    und transformiert werden sollen.
   en: >-
     A blueprint essentially contains at least four different sections:
     Actions, sources, destinations and streams. Each stream refers
@@ -53,17 +54,22 @@
     one or more destinations. Together these primitives tell Kodex
     how data should flow through it and how it should be analyzed
     and transformed.
+46e22a5fe97665e1:
+  de: >-
+    Sie können eine bestimmte Blaupause mit dem Befehl `run` ausführen:
+  en: 'You can run a given blueprint using the `run` command:'
 59bef834bbc4b5b9:
   de: '## Grundlagen der Blaupause'
   en: <md-heading v="##">Blueprint basics</md-heading>
 802a16e88afe8ec6:
-  de: "Kodex sucht nach einem Verzeichnis mit einer `.blueprints.yml`\
-    \ Datei im ZIP-Archiv und extrahiert dieses Verzeichnis in\
-    \ den Hauptpfad der Blaupausen. Sie k\xF6nnen nat\xFCrlich\
-    \ auch eigene lokale Blaupausen-Repositorys erstellen, stellen\
-    \ Sie nur sicher, dass Sie sie in einen Unterordner eines\
-    \ Blaupausen-Pfades legen und eine `.blueprints.yml` Datei\
-    \ mit folgendem Inhalt erstellen:"
+  de: >-
+    Kodex sucht nach einem Verzeichnis mit einer `.blueprints.yml`
+    Datei im ZIP-Archiv und extrahiert dieses Verzeichnis in den
+    Hauptpfad der Blaupausen. Sie können natürlich auch eigene
+    lokale Blaupausen-Repositorys erstellen, stellen Sie nur sicher,
+    dass Sie sie in einen Unterordner eines Blaupausen-Pfades
+    legen und eine `.blueprints.yml` Datei mit folgendem Inhalt
+    erstellen:
   en: >-
     Kodex will look for a directory with a <md-code>.blueprints.yml</md-code>
     file in the ZIP  archive and extract that directory to the
@@ -72,19 +78,20 @@
     of a blueprints path and create a <md-code>.blueprints.yml</md-code>
     file with the following content:
 807c0cdc1d7e241f:
-  de: "Sie k\xF6nnen eine bestimmte Blaupause mit dem `run` Befehl\
-    \ ausf\xFChren:"
+  de: >-
+    Sie können eine bestimmte Blaupause mit dem `run` Befehl ausführen:
   en: >-
     You can run a given blueprint using the <md-code>run</md-code>
     command:
 92a3021f62a6b7cd:
-  de: "Kodex wird versuchen, eine in einem Unterordner `pseudonymization/examples/data-types`\
-    \ benannte `pseudonymize.yml` Blaupause innerhalb eines der\
-    \ angegebenen Pfade zu finden. Manchmal haben Sie m\xF6glicherweise\
-    \ verschiedene Versionen einer Blaupause installiert. Standardm\xE4\
-    \xDFig l\xE4dt Kodex die neueste Version, die er finden kann.\
-    \ Wenn Sie das nicht w\xFCnschen, k\xF6nnen Sie mit dem `--version`\
-    \ Flag eine Version angeben:"
+  de: >-
+    Kodex wird versuchen, eine in einem Unterordner `pseudonymization/examples/data-types`
+    benannte `pseudonymize.yml` Blaupause innerhalb eines der
+    angegebenen Pfade zu finden. Manchmal haben Sie möglicherweise
+    verschiedene Versionen einer Blaupause installiert. Standardmäßig
+    lädt Kodex die neueste Version, die er finden kann. Wenn Sie
+    das nicht wünschen, können Sie mit dem `--version` Flag eine
+    Version angeben:
   en: >-
     Kodex will try to find a blueprint named <md-code>pseudonymize.yml</md-code>
     in a subfolder <md-code>pseudonymization/examples/data-types</md-code>
@@ -94,27 +101,46 @@
     want that, you can specify a version using the <md-code>--version</md-code>
     flag:
 9bd834f2c24daa2c:
-  de: "Dadurch wird der neueste Schnappschuss des Hauptzweigs\
-    \ unseres [Blueprints-Repositorys](https://github.com/kiprotect/blueprints)\
-    \ heruntergeladen und in ein lokales Verzeichnis installiert.\
-    \ Wenn Sie die Blaupausen von einer anderen URL herunterladen\
-    \ m\xF6chten, geben Sie sie einfach an:"
+  de: >-
+    Dadurch wird der neueste Schnappschuss des Hauptzweigs unseres
+    [Blueprints-Repositorys](https://github.com/kiprotect/blueprints)
+    heruntergeladen und in ein lokales Verzeichnis installiert.
+    Wenn Sie die Blaupausen von einer anderen URL herunterladen
+    möchten, geben Sie sie einfach an:
   en: >-
     This will download the latest snapshot of the master branch
     of our <md-link href="aHR0cHM6Ly9naXRodWIuY29tL2tpcHJvdGVjdC9ibHVlcHJpbnRz">Blueprints
     repository</md-link> and install it into a local directory.
     If you want to download blueprints from a different URL simple
     provide it:
+9e1ecb92c6f07d55:
+  de: >-
+    Wenn Sie den `[blueprint name]` weglassen, sucht Kodex nach
+    einer Datei mit dem Namen `.blueprint.yml` im aktuellen Verzeichnis,
+    um sie auszuführen. Andernfalls prüft Kodex zunächst, ob Sie
+    einen Dateispeicherort angegeben haben, und lädt den Blueprint
+    von dort, falls ja. Andernfalls geht Kodex alle Verzeichnisse
+    für Blaupausen durch (standardmäßig `~/.kodex/blueprints`)
+    und versucht, die von Ihnen angegebene Blaupause zu finden.
+    Wenn wir zum Beispiel Folgendes ausführen
+  en: >-
+    If you omit the <tr-hint v="blueprint name">`[blueprint name]`</tr-hint>,
+    Kodex will look for a file named `.blueprint.yml` in the current
+    directory to run. Otherwise, Kodex will first check if you
+    entered a file location, and if so loads the blueprint from
+    there. Otherwise, Kodex will go through all of its blueprint
+    directories (by default `~/.kodex/blueprints`) and try to
+    find the blueprint you specified. For example, if we run
 9ea9a4b4de4debce:
-  de: "Wenn Sie den `[blueprint name]` weglassen, sucht Kodex\
-    \ nach einer Datei mit dem Namen `.blueprint.yml` im aktuellen\
-    \ Verzeichnis, die ausgef\xFChrt werden soll. Anderenfalls\
-    \ pr\xFCft Kodex zun\xE4chst, ob Sie einen Speicherort f\xFC\
-    r die Datei eingegeben haben, und l\xE4dt dann die Blaupause\
-    \ von dort. Andernfalls durchsucht Kodex alle seine Blaupausen-Verzeichnisse\
-    \ (standardm\xE4\xDFig `~/.kodex/blueprints`) und versucht,\
-    \ die von Ihnen angegebene Blaupause zu finden. Wenn wir zum\
-    \ Beispiel"
+  de: >-
+    Wenn Sie den `[blueprint name]` weglassen, sucht Kodex nach
+    einer Datei mit dem Namen `.blueprint.yml` im aktuellen Verzeichnis,
+    die ausgeführt werden soll. Anderenfalls prüft Kodex zunächst,
+    ob Sie einen Speicherort für die Datei eingegeben haben, und
+    lädt dann die Blaupause von dort. Andernfalls durchsucht Kodex
+    alle seine Blaupausen-Verzeichnisse (standardmäßig `~/.kodex/blueprints`)
+    und versucht, die von Ihnen angegebene Blaupause zu finden.
+    Wenn wir zum Beispiel
   en: >-
     If you omit the <tr-hint v="PG1kLWNvZGU-W2JsdWVwcmludCBuYW1lXTwvbWQtY29kZT4=">blueprint
     name</tr-hint>, Kodex will look for a file named <md-code>.blueprint.yml</md-code>
@@ -124,26 +150,60 @@
     of its blueprint directories (by default <md-code>~/.kodex/blueprints</md-code>)
     and try to find the blueprint you specified. For example,
     if we run
+a1e00a5f1b1e90cf:
+  de: >-
+    Kodex sucht im ZIP-Archiv nach einem Verzeichnis mit einer
+    `.blueprints.yml` -Datei und entpackt dieses Verzeichnis in
+    den Hauptpfad für Blaupausen. Sie können natürlich auch eigene
+    lokale Blueprint-Repositories erstellen. Stellen Sie nur sicher,
+    dass Sie diese in einem Unterordner eines Blueprints-Pfads
+    ablegen und eine `.blueprints.yml` -Datei mit dem folgenden
+    Inhalt erstellen:
+  en: >-
+    Kodex will look for a directory with a `.blueprints.yml` file
+    in the ZIP  archive and extract that directory to the main
+    blueprints path. You can also create own local blueprint repositories
+    of course, just make sure to put them in a subfolder of a
+    blueprints path and create a `.blueprints.yml` file with the
+    following content:
+b5ca91a326904fbb:
+  de: >-
+    Kodex wird versuchen, eine Blaupause mit dem Namen `pseudonymize.yml`
+    in einem Unterordner `pseudonymization/examples/data-types`
+    innerhalb eines der angegebenen Blaupausenpfade zu finden.
+    Es kann vorkommen, dass Sie verschiedene Versionen eines Blueprints
+    installiert haben. Standardmäßig lädt Kodex die neueste Version,
+    die es finden kann. Wenn Sie das nicht möchten, können Sie
+    mit dem Flag `--version` eine Version angeben:
+  en: >-
+    Kodex will try to find a blueprint named `pseudonymize.yml`
+    in a subfolder `pseudonymization/examples/data-types` within
+    any of the given blueprint paths. Sometimes you might have
+    different versions of a blueprint installed. By default, Kodex
+    will load the latest version it can find. If you don't want
+    that, you can specify a version using the `--version` flag:
 b7e23157a8b9c39d:
-  de: "    Die Grundstruktur einer Blaupause. Dieses Beispiel\
-    \ w\xFCrde Daten aus einer SQL-Datenbank lesen, sie pseudonymisieren\
-    \ und die pseudonymisierten Daten an eine HTTP-API weiterleiten."
+  de: >2-
+        Die Grundstruktur einer Blaupause. Dieses Beispiel würde
+    Daten aus einer SQL-Datenbank lesen, sie pseudonymisieren
+    und die pseudonymisierten Daten an eine HTTP-API weiterleiten.
   en: >2-
         The basic structure of a blueprint. This example would
     read data from a SQL database, pseudonymize it and forward
     the pseudonymized data to a HTTP API.
 bf456aa8ae02806b:
-  de: "## Ausf\xFChren von Blaupausen"
+  de: '## Ausführen von Blaupausen'
   en: <md-heading v="##">Running blueprints</md-heading>
 d53694c394c06e8b:
-  de: "Um dies so einfach wie m\xF6glich zu machen, haben wir\
-    \ eine deklarative und ausdrucksstarke Konfigurationssprache\
-    \ auf der Basis von YAML-Dateien implementiert. Andere Systeme\
-    \ wie Kubernetes oder Ansible haben gezeigt, dass Sammlungen\
-    \ von YAML-Dateien leistungsf\xE4hige Werkzeuge f\xFCr das\
-    \ Konfigurationsmanagement sein k\xF6nnen. Au\xDFerdem sind\
-    \ die Dateien einfach zu handhaben und k\xF6nnen wie jede\
-    \ andere Konfigurationsdatei versioniert werden."
+  de: >-
+    Um dies so einfach wie möglich zu machen, haben wir eine deklarative
+    und ausdrucksstarke Konfigurationssprache auf der Basis von
+    YAML-Dateien implementiert. Andere Systeme wie Kubernetes
+    oder Ansible haben gezeigt, dass Sammlungen von YAML-Dateien
+    leistungsfähige Werkzeuge für das Konfigurationsmanagement
+    sein können. Außerdem sind die Dateien einfach zu handhaben
+    und können wie jede andere Konfigurationsdatei versioniert
+    werden.
   en: >-
     To make this as easy as possible, we implemented a declarative
     and expressive config language based on YAML files. Other

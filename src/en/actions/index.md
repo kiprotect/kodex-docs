@@ -1,15 +1,10 @@
 # Actions
 
-<article class="message is-danger">
-    <div class="message-body">
-        <p>
-            This section is still under construction and incomplete. We apologize for the inconvenience.
-        </p>
-    </div>
-</article>
-
-
 Actions are how Kodex transforms or analyzes data. Actions can be called individually or as a sequence, in which each action will receive the result of the previous action. The following sections describe the different action types that Kodex currently supports.
+
+## Generic Validation & Transformation
+
+Often data is complex & hierarchical, making it difficult to apply simple transformations to it. For this case Kodex support generic form-based validation and transformation of data. This enables you to easily parse, validate and transform complex, hierarchical data like JSON documents. You can read more about this type of transformation in the [form action documenation]({{'actions.form'|href}}).
 
 ## Pseudonymization
 

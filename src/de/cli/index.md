@@ -10,21 +10,21 @@ Zunächst müssen Sie das Kodex CLI-Tool herunterladen oder erstellen. Auf unser
 
 Standardmäßig steuern wir das CLI-Tool über so genannte **Blueprints**. Ein Blueprint ist eine Konfigurationsdatei (oder eine Sammlung davon), die beschreibt, wie Kodex strukturierte Daten lesen, analysieren, transformieren und schreiben soll.
 
-Um eine Blaupause auszuführen, führen Sie einfach `kodex run [blueprint name]`. Der Kodex wird mit einer kostenlosen, öffentlichen Sammlung von Beispiel-Entwürfen geliefert, die uns den Einstieg erleichtern. Wir können sie auch über die Befehlszeile herunterladen und installieren:
+Um einen Blueprint auszuführen, führen Sie einfach `kodex run [blueprint name]` aus. Kodex kommt mit einem kostenlosen, öffentlichen Repository von Beispiel-Blaupausen, die uns den Einstieg erleichtern. Wir können sie auch über die Kommandozeile herunterladen und installieren:
 
 ```
 kodex blueprints download
 ```
 
 
-Dadurch wird unser öffentliches [Blaupausen-Repository](https://github.com/kiprotect/blueprints) heruntergeladen und in einem lokalen Verzeichnis gespeichert (standardmäßig `~/.kodex/blueprints`). Sie können dann jede Blaupause ausführen, indem Sie einfach ihren Pfad relativ zum Blaupausen-Verzeichnis angeben. Lassen Sie uns also ein einfaches Beispiel ausführen, das zeigt, wie Kodex verschiedene Datentypen pseudonymisieren kann:
+Dies lädt unser öffentliches [Blueprints-Repository](https://github.com/kiprotect/blueprints) herunter und speichert es in einem lokalen Verzeichnis (standardmäßig `~/.kodex/blueprints`). Sie können dann jeden Blueprint ausführen, indem Sie einfach seinen Pfad relativ zum Blueprints-Verzeichnis angeben. Lassen Sie uns also ein einfaches Beispiel ausführen, das zeigt, wie Kodex verschiedene Datentypen pseudonymisieren kann:
 
 ```
 kodex run pseudonymization/examples/data-types/pseudonymize
 ```
 
 
-Dadurch wird die Konfiguration aus der Blaupausendatei (`pseudonymize.yml`) geladen. Diese Datei gibt an, woher die Daten gelesen werden sollen (in diesem Fall eine JSON-Datei), wie die Daten transformiert werden sollen (in diesem Fall unter Verwendung einer Pseudonymisierung) und wohin die resultierenden Ausgabedaten gesendet werden sollen (wieder eine JSON-Datei).
+Dadurch wird die Konfiguration aus der Blueprint-Datei (`pseudonymize.yml`) geladen. Diese Datei gibt an, woher Daten gelesen werden sollen (in diesem Fall eine JSON-Datei), wie die Daten umgewandelt werden sollen (in diesem Fall unter Verwendung einer Pseudonymisierung) und wohin die resultierenden Ausgabedaten gesendet werden sollen (wieder eine JSON-Datei).
 
 <aside>
     Die Elemente in der <code>input.json</code> Datei, die wir pseudonymisieren möchten.
@@ -48,7 +48,7 @@ Dadurch wird die Konfiguration aus der Blaupausendatei (`pseudonymize.yml`) gela
 
 </aside>
 
-Der von uns gewählte Beispiel-Entwurf liest Datenelemente aus einer `input.json` Datei, die sich im gleichen Verzeichnis wie der Entwurf befindet, pseudonymisiert alle Attribute jedes Elements unter Verwendung verschiedener anwendbarer Pseudonymisierungsmethoden und schreibt die pseudonymisierten Daten in eine JSON-Datei (`pseudonymized.json`) im aktuellen Verzeichnis. So sieht die Ausgabe aus:
+Der Beispiel-Blaupause, die wir ausgewählt haben, liest Datenelemente aus einer `input.json` Datei, die sich im gleichen Verzeichnis wie die Blaupause befindet, pseudonymisiert alle Attribute jedes Elements mit verschiedenen anwendbaren Pseudonymisierungsmethoden und schreibt die pseudonymisierten Daten in eine JSON-Datei (`pseudonymized.json`) im aktuellen Verzeichnis. So sieht die Ausgabe aus:
 
 <div class="highlight">
     {%filter highlight(strip=True, language='json')%}
@@ -70,18 +70,18 @@ Der von uns gewählte Beispiel-Entwurf liest Datenelemente aus einer `input.json
 
 </div>
 
-Wie Sie sehen können, pseudonymisierte Kodex jedes Attribut in jedem Datenelement und fügte auch ein neues Attribut, `_kip`, zu den Elementen hinzu. Der Wert dieses Attributs bezieht sich auf einen Parametersatz, der die kryptografischen Schlüssel enthält, die zur Transformation der Daten verwendet wurden. Die eigentlichen Schlüssel werden in einem so genannten Parameterspeicher gespeichert. Wenn Sie das nicht wünschen, können Sie die Schlüssel auch selbst verwalten: Die `pseudonymize-with-key` Blaupause im gleichen Verzeichnis tut dies, indem sie Sie zunächst zur Eingabe eines Schlüssels auffordert und diesen Schlüssel dann verwendet, um weitere Verschlüsselungsschlüssel für die einzelnen Pseudonymisierungsoperationen abzuleiten. Die Verwaltung von Schlüsseln und Parametern ist an sich schon ein komplexes Thema, denn jetzt können Sie sicher sein, dass Kodex sich um die schmutzigen Details für Sie kümmert.
+Wie Sie sehen können, hat Kodex jedes Attribut in jedem Datenelement pseudonymisiert und außerdem ein neues Attribut, `_kip`, zu den Elementen hinzugefügt. Der Wert dieses Attributs verweist auf einen Parametersatz, der die kryptografischen Schlüssel enthält, die zur Transformation der Daten verwendet wurden. Die eigentlichen Schlüssel werden in einem sogenannten Parameterspeicher abgelegt. Wenn Sie das nicht möchten, können Sie die Schlüssel auch selbst verwalten: Der Blueprint `pseudonymize-with-key` im gleichen Verzeichnis tut dies, indem er Sie zunächst zur Eingabe eines Schlüssels auffordert und dann aus diesem Schlüssel weitere Verschlüsselungsschlüssel für die einzelnen Pseudonymisierungsoperationen ableitet. Die Verwaltung von Schlüsseln und Parametern ist ein komplexes Thema für sich, seien Sie einfach versichert, dass Kodex sich um die unübersichtlichen Details für Sie kümmert.
 
 ### Depseudonymisierung von Daten
 
-Irgendwann möchten Sie Ihre Daten vielleicht tatsächlich wieder depseudonymisieren. Kodex macht dies einfach, indem er eine `undo` Aktion zur Verfügung stellt, die auf reversible Transformationen wie die oben beschriebene kryptografische Pseudonymisierung angewendet werden kann. Um also die oben genannten Daten zu depseudonymisieren, können wir einfach eine Blaupause ausführen, die eine solche `undo` Aktion enthält:
+Irgendwann möchten Sie Ihre Daten vielleicht sogar wieder depseudonymisieren. Kodex macht dies einfach, indem es eine `undo` Aktion bereitstellt, die auf umkehrbare Transformationen wie die kryptografische Pseudonymisierung oben angewendet werden kann. Um also die obigen Daten zu depseudonymisieren, können wir einfach einen Blueprint ausführen, der eine solche `undo` Aktion enthält:
 
 ```
 kodex run pseudonymization/examples/data-types/depseudonymize
 ```
 
 
-die die depseudonymisierten Daten (die genau mit den Eingabedaten übereinstimmen sollten) ausdrucken wird. Wenn Sie selbst einen Pseudonymisierungsschlüssel mit der Taste `pseudonymize-with-key`, angegeben haben, können Sie stattdessen `depseudonymize-with-key` blueprint ausführen, das Sie zur Eingabe des Pseudonymisierungsschlüssels auffordert. Ist das nicht einfach?
+was die depseudonymisierten Daten ausgibt (die genau mit den Eingabedaten übereinstimmen sollten). Wenn Sie selbst einen Pseudonymisierungsschlüssel bereitgestellt haben, indem Sie die `pseudonymize-with-key` verwenden, können Sie stattdessen `depseudonymize-with-key` blueprint ausführen, das Sie zur Eingabe des Pseudonymisierungsschlüssels auffordert. Ist das nicht einfach?
 
 ## Nächste Schritte
 
