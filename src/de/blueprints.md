@@ -9,7 +9,8 @@ Um dies so einfach wie möglich zu machen, haben wir eine deklarative und ausdru
 ## Grundlagen der Blaupause
 
 <aside>
-    Die Grundstruktur einer Blaupause. Dieses Beispiel würde Daten aus einer SQL-Datenbank lesen, sie pseudonymisieren und die pseudonymisierten Daten an eine HTTP-API weiterleiten.
+    Die Grundstruktur einer Blaupause. Dieses Beispiel würde
+Daten aus einer SQL-Datenbank lesen, sie pseudonymisieren und die pseudonymisierten Daten an eine HTTP-API weiterleiten.
 
     <div class="highlight">
         {%filter highlight(strip=True, language='yaml')%}

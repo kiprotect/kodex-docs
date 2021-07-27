@@ -27,7 +27,8 @@ kodex run pseudonymization/examples/data-types/pseudonymize
 Dadurch wird die Konfiguration aus der Blueprint-Datei (`pseudonymize.yml`) geladen. Diese Datei gibt an, woher Daten gelesen werden sollen (in diesem Fall eine JSON-Datei), wie die Daten umgewandelt werden sollen (in diesem Fall unter Verwendung einer Pseudonymisierung) und wohin die resultierenden Ausgabedaten gesendet werden sollen (wieder eine JSON-Datei).
 
 <aside>
-    Die Elemente in der <code>input.json</code> Datei, die wir pseudonymisieren möchten.
+    Die Elemente in der <code>input.json</code> Datei, die
+wir pseudonymisieren möchten.
 
     <div class="highlight">
         {%filter highlight(strip=True, language='json')%}

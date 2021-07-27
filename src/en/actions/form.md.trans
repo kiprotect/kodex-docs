@@ -1,0 +1,227 @@
+242334bdebd242c3:
+  de: >-
+    * **IstIn** : Stellt sicher, dass das Feld eines der angegebenen
+    `choices` enthält.
+  en: >-
+    * **IsIn**: Ensures the field contains one of the specified
+    `choices`.
+24b8d2482f57573e:
+  de: >-
+    * **Wechseln** : Validiert das Feld gegen eine Liste von Validatoren,
+    die in einer `cases` String-Map definiert sind, wobei der
+    gewählte Fall vom Wert eines anderen Feldes abhängt, dessen
+    Name durch `key` gegeben ist.
+  en: >-
+    * **Switch**: Validates the field against a list of validators
+    defined in a `cases` string map, where the chosen case depends
+    on the value of another field whose name is given by `key`.
+25a7dd7b206b363f:
+  de: >-
+    Die Aktion `form` implementiert unsere [Open-Source-Formularvalidierungs-
+    und Transformationsbibliothek](https://github.com/kiprotect/go-helpers),
+    mit der Sie komplexe, hierarchische Daten analysieren, validieren
+    und transformieren können.
+  en: >-
+    The `form` action implements our open-source [form validation
+    & transformation library](https://github.com/kiprotect/go-helpers),
+    enabling you to parse, validate and transform complex, hierarchical
+    data.
+2a8e164f20b95f44:
+  de: >-
+    Darüber hinaus unterstützt der Formularmechanismus auch alle
+    anderen Aktionen durch den `IsAction` Validator, der eine
+    Aktionsspezifikation als Konfiguration annimmt. Beispiel-Validator:
+  en: >-
+    In addition, the form mechanism supports all other actions
+    as well through the `IsAction` validator, which takes an action
+    specification as configuration. Example validator:
+2ac1682f258f4446:
+  de: >-
+    * **IstHex** : Stellt sicher, dass das Feld einen Hex-Wert
+    enthält. Wenn `convert` `true` ist, wird der Wert in ein Byte-Array
+    konvertiert.
+  en: >-
+    * **IsHex**: Ensures the field contains a hex value. If `convert`
+    is `true`, the value will be converted to a byte array.
+3ebc2b322662c696:
+  de: >-
+    * **IsTime** : Stellt sicher, dass das Feld ein datetime/time-Objekt
+    im angegebenen `format` enthält, entweder `rfc3339`, `rfc3339-date`,
+    `unix`, `unix-nano` oder `unix-milli`. Wenn `raw` wahr ist,
+    wird die Zeichenkette nicht in ein `Time` Objekt konvertiert.
+    Wenn `toUTC` wahr ist, wird das resultierende `Time` Objekt
+    in `UTC` umgewandelt.
+  en: >-
+    * **IsTime**: Ensures the field contains a datetime/time object
+    in the given `format`, either `rfc3339`, `rfc3339-date`, `unix`,
+    `unix-nano` or `unix-milli`. If `raw` is true the string will
+    not be converted to a `Time` object. If `toUTC` is true, the
+    resulting `Time` object will be converted to `UTC`.
+3f11af71e0a64ccc:
+  de: >-
+    * **IstListe** : Stellt sicher, dass das Feld eine Liste von
+    Werten enthält. Optional wird eine Liste von `validators`
+    auf jedes Listenelement angewendet.
+  en: >-
+    * **IsList**: Ensures the field contains a list of values.
+    Optionally, a list of `validators` will be applied to each
+    list element.
+55c9f2db9620d495:
+  de: >-
+    * **IstStringList** : Stellt sicher, dass das Feld eine Liste
+    von Strings enthält. Optional wird eine Liste von `validators`
+    auf jedes Listenelement angewendet.
+  en: >-
+    * **IsStringList**: Ensures the field contains a list of strings.
+    Optionally, a list of `validators` will be applied to each
+    list element.
+69356b3d93ce04e4:
+  de: >-
+    * **EntsprichtRegex** : Stellt sicher, dass das Feld mit dem
+    angegebenen regulären Ausdruck übereinstimmt. Geht davon aus,
+    dass das Feld einen String-Wert enthält, der vor der Verwendung
+    des `IsString` Validators überprüft werden sollte.
+  en: >-
+    * **MatchesRegex**: Ensures the field matches the given regular
+    expression. Assumes that the field contains a string value,
+    which should be validated before using the `IsString` validator.
+6a587df00004ea3e:
+  de: >-
+    Diese Aktion stellt sicher, dass jedes Element ein `date`
+    Feld hat, das eine RFC-3339-formatierte Zeichenkette enthält,
+    und ein `count` Feld, das einen Integer-Wert zwischen 0 und
+    1000 enthält. Es sind noch viele andere Validator-Typen verfügbar,
+    hier ist die vollständige Liste:
+  en: >-
+    This action will ensure each item has a `date` field that
+    contains an RFC-3339 formatted data string and a `count` field
+    that contains an integer value between 0 and 1000. There are
+    many other validator types available, here's the full list:
+6c2333959930933d:
+  de: >-
+    * **IstStringMap** : Stellt sicher, dass das Feld eine String-basierte
+    Hash-Map / ein Wörterbuch enthält. Optional kann eine `form`
+    angegeben werden, die zur Validierung des Wertes verwendet
+    wird.
+  en: >-
+    * **IsStringMap**: Ensures the field contains a string-based
+    hash map / dictionary. Optionally, a `form` can be specified
+    that will be used to validate the value.
+7995560d5d074780:
+  de: >-
+    * **IstGanzzahl** : Stellt sicher, dass das Feld einen Integer-Wert
+    enthält. Optional, wenn `hasMin` oder `hasMax` `true` ist,
+    definieren die Konfigurationsoptionen `min` oder `max` den
+    Bereich des Integer-Wertes.
+  en: >-
+    * **IsInteger**: Ensure the filed contains an integer value.
+    Optionally, if `hasMin` or `hasMax` is `true`, the `min` or
+    `max` config options define the range of the integer value.
+7f4dfdf0296c4710:
+  de: >-
+    * **IstString** : Stellt sicher, dass das Feld einen String-Wert
+    enthält. Optional geben `minLength` und `maxLength` die minimale
+    und maximale Länge der Zeichenkette an.
+  en: >-
+    * **IsString**: Ensures the field contains a string value.
+    Optionally, `minLength` and `maxLength` specify the minimum
+    and maximum length of the string.
+8b481e84a3da9dc2:
+  de: >-
+    Ein **Formular** besteht aus einer Anzahl von **Feldern**.
+    Jedes Feld kann einen oder mehrere **Validatoren** definieren,
+    die den Inhalt des Feldes validieren und transformieren können.
+    Wenn die Formularüberprüfung erfolgreich ist, gibt die Aktion
+    die überprüften Felder zurück. Wenn nicht, wird ein Fehler
+    ausgegeben. Hier ist ein Beispiel für eine Formularaktionsspezifikation:
+  en: >-
+    A **form** consists of a number of **fields**. Each field
+    can define one or more **validators**, which can validate
+    and transform the content of the field. If the form validation
+    is successful, the action will return the validated fields.
+    If not, an error will be thrown. Here's an example form action
+    specification:
+8c95c3d4b44ca89b:
+  de: >-
+    Diese führt eine Pseudonymisierung des Wertes mit der Methode
+    `merengue` durch. Parameter von eingebetteten Aktionen werden
+    automatisch von der Formularaktion verwaltet.
+  en: >-
+    This performs a pseudonymization of the value using the `merengue`
+    method. Parameters of embedded actions are managed automatically
+    by the form action.
+93c6a9e0d718ea6c:
+  de: >-
+    * **IsUUID** : Stellt sicher, dass das Feld einen UUID-Wert
+    enthält.
+  en: '* **IsUUID**: Ensures the field contains a UUID value.'
+9cbd2e9c568b5add:
+  de: '## Aktionen innerhalb von Formularen'
+  en: '## Actions Within Forms'
+aff2504e5d6194de:
+  de: >-
+    * **IstOptional** : Überspringt die anderen Prüfer, wenn das
+    Feld undefiniert ist, so dass es optional ist.
+  en: >-
+    * **IsOptional**: Will skip the other validators if the field
+    is undefined, making it optional.
+b45649885dd252b2:
+  de: >-
+    * **IsNotIn** : Wie **IsIn**, stellt aber sicher, dass der
+    Wert des Feldes **nicht** in der angegebenen `choices` ist.
+  en: >-
+    * **IsNotIn**: Like **IsIn**, but ensures the value of the
+    field is **not** in the given `choices`.
+ba4a06b5fb665919:
+  de: >-
+    * **Oder** : Stellt sicher, dass das Feld einen von mehreren
+    möglichen Werten enthält, wie durch eine Liste von `options`
+    angegeben, die wiederum eine Liste von Überprüfern enthält.
+    Hält bei der ersten Option an, die den Wert erfolgreich validiert.
+  en: >-
+    * **Or**: Ensures the field contains one of several possible
+    values as specified by a list of `options`, which in turn
+    contain a list of validators. Will stop at the first option
+    that successfully validates the value.
+c6144136c5fdde00:
+  de: '## Erste Schritte'
+  en: '## Getting Started'
+d59a2bc0b61921de:
+  de: >-
+    * **IstFließend** : Stellt sicher, dass das Feld einen Float-Wert
+    enthält. Optional, wenn `hasMin` oder `hasMax` `true` ist,
+    definieren die Konfigurationsoptionen `min` oder `max` den
+    Bereich des Float-Wertes.
+  en: >-
+    * **IsFloat**: Ensures the field contains a float value. Optionally,
+    if `hasMin` or `hasMax` is `true`, the `min` or `max` config
+    options define the range of the float value.
+d69d02267b7cf1e4:
+  de: >-
+    * **IstBytes** : Stellt sicher, dass das Feld ein Byte-Array
+    mit einer bestimmten `encoding`, z. B. `hex`, `base64` oder
+    `base64-url` kodierten Daten enthält.
+  en: >-
+    * **IsBytes**: Ensures the field contains a byte array with
+    a given `encoding`, e.g. `hex`, `base64` or `base64-url` encoded
+    data.
+e012d3e5f2738a09:
+  de: >-
+    * **CanBeAnything** : Stellt nur sicher, dass das Feld vorhanden
+    ist, führt aber keine weitere Überprüfung dafür durch.
+  en: >-
+    * **CanBeAnything**: Just ensures the field is present, but
+    does not perform any other validation on it.
+e3b0c44298fc1c14:
+  de: ''
+  en: ''
+f44cd3783ce98392:
+  de: '# Formular Aktion'
+  en: '# Form Action'
+ff3690fa81af8b42:
+  de: >-
+    * **IstBoolean** : Stellt sicher, dass das Feld einen booleschen
+    Wert enthält, d.h. `true` oder `false`.
+  en: >-
+    * **IsBoolean**: Ensures the field contains a boolean value,
+    i.e. `true` or `false`.

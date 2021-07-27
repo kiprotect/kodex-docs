@@ -26,6 +26,11 @@ pages:
     slug: uebersicht
     src: de/actions/index.md
     title: Übersicht
+  - name: form
+    navtitle: Formular Aktion
+    slug: formular-aktion
+    src: de/actions/form.md
+    title: Formular Aktion
   name: actions
   navtitle: Aktionen
   slug: aktionen
