@@ -24,6 +24,21 @@ pages:
   - name: index
     navtitle: Übersicht
     slug: uebersicht
+    src: de/api/index.md
+    title: Übersicht
+  - name: authentication
+    navtitle: Authentifizierung
+    slug: authentifizierung
+    src: de/api/authentication.md
+    title: Authentifizierung
+  name: api
+  navtitle: API
+  slug: api
+  title: API
+- children:
+  - name: index
+    navtitle: Übersicht
+    slug: uebersicht
     src: de/actions/index.md
     title: Übersicht
   - name: form
@@ -31,6 +46,11 @@ pages:
     slug: formular-aktion
     src: de/actions/form.md
     title: Formular Aktion
+  - name: pseudonymization
+    navtitle: Pseudonymisierung Aktion
+    slug: pseudonymisierung-aktion
+    src: de/actions/pseudonymization.md
+    title: Pseudonymisierung Aktion
   name: actions
   navtitle: Aktionen
   slug: aktionen

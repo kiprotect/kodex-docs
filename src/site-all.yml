@@ -19,6 +19,21 @@ pages:
         name: index
         slug||slugify: overview
         src|f|exists?: "{target_language}/cli/index.md"
+  - name: api
+    title|t: API
+    navtitle|t: API
+    slug||slugify: api
+    children:
+      - src|f|exists?: "{target_language}/api/index.md"
+        title|t: Overview
+        navtitle|t: Overview
+        slug||slugify: overview
+        name: index
+      - src|f|exists?: "{target_language}/api/authentication.md"
+        title|t: Authentication
+        navtitle|t: Authentication
+        slug||slugify: authentication
+        name: authentication
   - name: actions
     title|t: Actions
     navtitle|t: Actions
@@ -34,6 +49,11 @@ pages:
         navtitle|t: Form Action
         slug||slugify: form
         src|f|exists?: "{target_language}/actions/form.md"
+      - name: pseudonymization
+        title|t: Pseudonymization Action
+        navtitle|t: Pseudonymization Action
+        slug||slugify: pseudonymization
+        src|f|exists?: "{target_language}/actions/pseudonymization.md"
   - name: blueprints
     title|t: Blueprints
     navtitle|t: Blueprints

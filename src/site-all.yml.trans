@@ -13,6 +13,9 @@
 655064cf0bab013b:
   de: Kommentierte Config-Datei
   en: Annotated Config File
+66880d2d8216260d:
+  de: Authentifizierung
+  en: Authentication
 765eecd260a5eb0d:
   de: Kommentierte Config
   en: Annotated Config
@@ -43,6 +46,9 @@ c3fc54aa5390dc2c:
 c7cb62821c02cbe3:
   de: Kommentierte Konfiguration
   en: Annotated configuration
+c8e5998f6a3955c2:
+  de: API
+  en: API
 cfa0277477f295d8:
   de: Integrationsprüfung
   en: Integration Testing
@@ -61,6 +67,9 @@ e806a291cfc3e61f:
 eb8115ec920bd32c:
   de: Google Tag Manager
   en: Google Tag Manager
+f38fdf8bb0b3e5a8:
+  de: Pseudonymisierung Aktion
+  en: Pseudonymization Action
 ff8059dc6752afdd:
   de: Aktionen
   en: Actions

@@ -1,0 +1,299 @@
+387bc15e6476e415:
+  de: >-
+    Dieses Prinzip lässt sich auf weitergehende strukturelle Eigenschaften
+    ausdehnen, wie im Folgenden erläutert wird.
+  en: >-
+    This principle can be extended to more advanced structural
+    properties, as discussed below.
+3f23853ed8859ebf:
+  de: >-
+    Die resultierenden Pseudonyme können mit dem Originalschlüssel
+    entschlüsselt/depseudonymisiert werden. Die Pseudonymisierungsmethode
+    `merengue` beispielsweise arbeitet mit beliebigen Binärdaten
+    und erzeugt binäre Pseudonyme, die zusätzlich die Präfixstruktur
+    der Daten erhalten können:
+  en: >-
+    The resulting pseudonyms can be decrypted/depseudonymized
+    using the original key. For example, the `merengue` pseudonymization
+    method operates on arbitrary binary data and produces binary
+    pseudonyms that can in addition preserve the prefix-structure
+    of the data:
+499642c51050e652:
+  de: >-
+    Kodex unterstützt auch nicht umkehrbare Pseudonymisierungsmethoden,
+    insbesondere die auf Keyed Hash basierende Pseudonymisierung,
+    die auf Keyed-Hash Message Authentication Codes (HMAC) basiert,
+    sowie die nicht auf Keyed Hash basierende Pseudonymisierung
+    (von der wir dringend abraten). Die folgende Aktion erzeugt
+    zum Beispiel ein HMAC-basiertes Pseudonym:
+  en: >-
+    Kodex supports non-reversible pseudonymization methods as
+    well, notably keyed hash-based pseudonymization based on keyed-hash
+    message authentication codes (HMAC), as well as unkeyed hash-based
+    pseudonymization (which we strongly discourage). For example,
+    the following action generates an HMAC-based pseudonym:
+4b3f050ebf577ddf:
+  de: >-
+    **Strukturerhaltende Pseudonymisierungsmethoden bewahren**
+    die spezifische interne Struktur von Identifikatoren.
+  en: >-
+    **Structure-preserving pseudonymization methods** preserve
+    specific internal structure of identifiers.
+4f9b70b97d7760c5:
+  de: >-
+    Bei **nicht umkehrbaren Pseudonymisierungsmethoden** ist dies
+    nicht möglich. **Deterministische Pseudonymisierungsmethoden**
+    erzeugen immer das gleiche Pseudonym, wenn sie zweimal auf
+    denselben Identifikator angewendet werden.
+  en: >-
+    **Non-reversible pseudonymization methods** do not allow this.
+    **Deterministic pseudonymization methods** will always create
+    the same pseudonym when applied to the same identifier twice.
+55c418411c5a1753:
+  de: >-
+    Pseudonymisierungsmethoden können auf der Grundlage ihrer
+    Eigenschaften klassifiziert werden. **Reversible Pseudonymisierungsmethoden**
+    ermöglichen die De-Pseudonymisierung von Daten, d.h. die Rückkehr
+    zum ursprünglichen Identifikator aus dem Pseudonym mit Hilfe
+    zusätzlicher Daten wie einem kryptographischen Schlüssel oder
+    einer Zuordnungstabelle. Bei **nicht umkehrbaren Pseudonymisierungsmethoden**
+    ist dies nicht möglich. **Deterministische Pseudonymisierungsmethoden**
+    erzeugen immer das gleiche Pseudonym, wenn sie zweimal auf
+    denselben Identifikator angewendet werden. **Nicht-deterministische
+    Methoden** erzeugen zufällige Pseudonyme, selbst wenn sie
+    mehrfach auf denselben Identifikator angewendet werden. **Strukturerhaltende
+    Pseudonymisierungsmethoden bew** ahren die spezifische interne
+    Struktur von Identifikatoren. Zum Beispiel ist eine deterministische
+    Pseudonymisierungsmethode auch strukturerhaltend in Bezug
+    auf den Gleichheitsoperator: Wenn die Pseudonyme für zwei
+    Identifikatoren gleich sind, müssen auch die ursprünglichen
+    Identifikatoren identisch gewesen sein. Dieses Prinzip kann
+    auf weitergehende strukturelle Eigenschaften ausgedehnt werden,
+    wie weiter unten beschrieben.
+  en: >-
+    Pseudonymization methods can be classified based on their
+    properties. **Reversible pseudonymization methods** allow
+    the de-pseudonymization of data, i.e. going back to the original
+    identifier from the pseudonym with the help of additional
+    data like a cryptographic key or a mapping table. **Non-reversible
+    pseudonymization methods** do not allow this. **Deterministic
+    pseudonymization methods** will always create the same pseudonym
+    when applied to the same identifier twice. **Non-deterministic
+    methods** will produce random pseudonyms even when applied
+    to the same identifier multiple times. **Structure-preserving
+    pseudonymization methods** preserve specific internal structure
+    of identifiers. For example, a deterministic pseudonymization
+    method is also structure-preserving in regards to the equality
+    operator: If the pseudonyms for two identifiers are equal,
+    the original identifiers must have been identical too. This
+    principle can be extended to more advanced structural properties,
+    as discussed below.
+64aa9c40adcb3e93:
+  de: '### Strukturerhaltende Methoden'
+  en: '### Structure-Preserving Methods'
+715cf4f73c498f57:
+  de: >-
+    Kodex unterstützt auch nicht umkehrbare Pseudonymisierungsmethoden,
+    insbesondere die Hash-basierte Pseudonymisierung auf der Grundlage
+    von Keyed-Hash Message Authentication Codes (HMAC) sowie die
+    Hash-basierte Pseudonymisierung ohne Schlüssel (von der wir
+    dringend abraten).
+  en: >-
+    Kodex supports non-reversible pseudonymization methods as
+    well, notably keyed hash-based pseudonymization based on keyed-hash
+    message authentication codes (HMAC), as well as unkeyed hash-based
+    pseudonymization (which we strongly discourage).
+79b8f04453c1b65a:
+  de: >-
+    Pseudonymisierung ist eine **Technologie zur Verbesserung
+    der Privatsphäre (PET)**, die direkte oder indirekte Identifikatoren
+    in einem Datenpunkt durch andere, "pseudonyme" Werte ersetzt.
+  en: >-
+    Pseudonymization is a **privacy-enhancing technology (PET)**
+    that replaces direct or indirect identifiers in a datapoint
+    with other, "pseudonymous" values.
+7cfbff121103e752:
+  de: >-
+    Kodex unterstützt auch nicht umkehrbare Pseudonymisierungsmethoden,
+    insbesondere die auf Keyed Hash basierende Pseudonymisierung
+    auf der Grundlage von Keyed Hash Message Authentication Codes
+    (HMAC) sowie die nicht auf Keyed Hash basierende Pseudonymisierung
+    (die nicht empfohlen wird).
+  en: >-
+    Kodex supports non-reversible pseudonymization methods as
+    well, notably keyed hash-based pseudonymization based on keyed-hash
+    message authentication codes (HMAC), as well as unkeyed hash-based
+    pseudonymization (which is not recommended).
+8112a110905002e8:
+  de: >-
+    Wenn die Pseudonyme für zwei Identifikatoren gleich sind,
+    müssen auch die ursprünglichen Identifikatoren identisch gewesen
+    sein.
+  en: >-
+    If the pseudonyms for two identifiers are equal, the original
+    identifiers must have been identical too.
+87cb7b1f36aca32c:
+  de: "Basierend auf der Methode `merengue` bietet Kodex verschiedene\
+    \ strukturerhaltende Pseudonymisierungsmethoden, die mit Datentypen\
+    \ wie Zeitstempeln, IP-Adressen und Zahlen arbeiten können. "
+  en: "Based on the `merengue` method Kodex offers various structure-preserving\
+    \ pseudonymization methods that can operate on data types\
+    \ such as timestamps, IP addresses and numbers. "
+8cf4381ffd31addc:
+  de: >-
+    Kodex unterstützt umkehrbare Pseudonymisierungsmethoden, die
+    auf format-erhaltenden Verschlüsselungsmethoden basieren.
+    Die resultierenden Pseudonyme können
+  en: >-
+    Kodex supports reversible pseudonymization methods based on
+    format-preserving encryption methods. The resulting pseudonyms
+    can
+94c596122283bf14:
+  de: '# Pseudonymisierung'
+  en: '# Pseudonymization'
+94fbca257837b273:
+  de: >-
+    Dies schützt die Identität der Person(en), zu der/denen die
+    Daten gehören, da ein Angreifer oder ein Nutzer der Daten
+    keine Beziehung mehr zu einer bestimmten Person herstellen
+    kann.
+  en: >-
+    This protects the identity of the individual(s) that the data
+    belongs to, as an adversary or a user of the data can no longer
+    establish a relationship to a specific person.
+a5eeb582c42a5abf:
+  de: '## Umkehrbare Methoden'
+  en: '## Reversible Methods'
+aff067f57327ecec:
+  de: '## Nicht-umkehrbare Methoden'
+  en: '## Non-Reversible Methods'
+b93cc01f313eae33:
+  de: >-
+    Zum Beispiel ist eine deterministische Pseudonymisierungsmethode
+    auch strukturerhaltend in Bezug auf den Gleichheitsoperator:
+  en: >-
+    For example, a deterministic pseudonymization method is also
+    structure-preserving in regards to the equality operator:
+bce98c2c5cc0f090:
+  de: >-
+    Beispielsweise könnte eine formatschonende Methode ein gültiges
+    Postleitzahlen-Pseudonym aus einer Original-Postleitzahl erzeugen.
+  en: >-
+    For example, a format-preserving method could generate a valid
+    zip code pseudonym from an original zip code.
+beb02f7118190ea0:
+  de: >-
+    Die folgenden Aktionen führen zum Beispiel eine struktur-
+    und formaterhaltende Pseudonymisierung der oben genannten
+    Datentypen durch:
+  en: >-
+    For example, the following actions perform structure- and
+    format-preserving pseudonymization of the above-mentioned
+    data types:
+c2c4ac9d647f8da5:
+  de: >-
+    Diese Methoden bewahren das Format der Originaldaten und können
+    auch strukturelle Informationen bewahren.
+  en: >-
+    These methods preserve the format of the original data and
+    can also preserve structural information.
+c42aa21e2ea4fbdb:
+  de: >-
+    Pseudonymisierungsmethoden können auf der Grundlage ihrer
+    Eigenschaften klassifiziert werden. **Reversible Pseudonymisierungsmethoden**
+    erlauben die De-Pseudonymisierung von Daten, d.h. die Rückkehr
+    zum ursprünglichen Identifikator aus dem Pseudonym mit Hilfe
+    zusätzlicher Daten wie einem kryptographischen Schlüssel oder
+    einer Zuordnungstabelle. Bei **nicht umkehrbaren Pseudonymisierungsmethoden**
+    ist dies nicht möglich. **Deterministische Pseudonymisierungsmethoden**
+    erzeugen immer das gleiche Pseudonym, wenn sie zweimal auf
+    denselben Identifikator angewendet werden. **Nicht-deterministische
+    Methoden** erzeugen zufällige Pseudonyme, selbst wenn sie
+    mehrfach auf denselben Identifikator angewendet werden. **Strukturerhaltende
+    Pseudonymisierungsmethoden bew** ahren die spezifische interne
+    Struktur von Identifikatoren. Zum Beispiel ist eine deterministische
+    Pseudonymisierungsmethode auch strukturerhaltend in Bezug
+    auf den Gleichheitsoperator: Wenn die Pseudonyme für zwei
+    Identifikatoren gleich sind, müssen auch die ursprünglichen
+    Identifikatoren identisch gewesen sein. Dieses Prinzip kann
+    auf weitergehende strukturelle Eigenschaften ausgedehnt werden,
+    wie im Folgenden erläutert wird. **Format-erhaltende Pseudonymisierungsmethoden
+    bew** ahren das ursprüngliche Format der Daten. Beispielsweise
+    könnte eine formatbewahrende Methode aus einer ursprünglichen
+    Postleitzahl ein gültiges Pseudonym für die Postleitzahl erzeugen.
+  en: >-
+    Pseudonymization methods can be classified based on their
+    properties. **Reversible pseudonymization methods** allow
+    the de-pseudonymization of data, i.e. going back to the original
+    identifier from the pseudonym with the help of additional
+    data like a cryptographic key or a mapping table. **Non-reversible
+    pseudonymization methods** do not allow this. **Deterministic
+    pseudonymization methods** will always create the same pseudonym
+    when applied to the same identifier twice. **Non-deterministic
+    methods** will produce random pseudonyms even when applied
+    to the same identifier multiple times. **Structure-preserving
+    pseudonymization methods** preserve specific internal structure
+    of identifiers. For example, a deterministic pseudonymization
+    method is also structure-preserving in regards to the equality
+    operator: If the pseudonyms for two identifiers are equal,
+    the original identifiers must have been identical too. This
+    principle can be extended to more advanced structural properties,
+    as discussed below. **Format-preserving pseudonymization methods**
+    preserve the original format of the data. For example, a format-preserving
+    method could generate a valid zip code pseudonym from an original
+    zip code.
+e130187467de04dc:
+  de: >-
+    Pseudonymisierung ist eine Technologie zur Verbesserung der
+    Privatsphäre (PET), die direkte oder indirekte Identifikatoren
+    in einem Datenpunkt durch andere, "pseudonyme" Werte ersetzt.
+    Dies schützt die Identität der Person(en), zu der/denen die
+    Daten gehören, da ein Angreifer oder ein Nutzer der Daten
+    keine Beziehung mehr zu einer bestimmten Person herstellen
+    kann.
+  en: >-
+    Pseudonymization is a privacy-enhancing technology (PET) that
+    replaces direct or indirect identifiers in a datapoint with
+    other, "pseudonymous" values. This protects the identity of
+    the individual(s) that the data belongs to, as an adversary
+    or a user of the data can no longer establish a relationship
+    to a specific person.
+e3b0c44298fc1c14:
+  de: ''
+  en: ''
+ed9bbebd1ebf90b6:
+  de: >-
+    **Nicht-deterministische Methoden** erzeugen zufällige Pseudonyme,
+    selbst wenn sie mehrfach auf denselben Identifikator angewendet
+    werden.
+  en: >-
+    **Non-deterministic methods** will produce random pseudonyms
+    even when applied to the same identifier multiple times.
+ef186e21d3c8f536:
+  de: >-
+    Pseudonymisierungsmethoden können auf der Grundlage ihrer
+    Eigenschaften klassifiziert werden. **Reversible Pseudonymisierungsmethoden**
+    ermöglichen die De-Pseudonymisierung von Daten, d.h. die Rückkehr
+    zum ursprünglichen Identifikator aus dem Pseudonym mit Hilfe
+    zusätzlicher Daten wie einem kryptographischen Schlüssel oder
+    einer Zuordnungstabelle.
+  en: >-
+    Pseudonymization methods can be classified based on their
+    properties. **Reversible pseudonymization methods** allow
+    the de-pseudonymization of data, i.e. going back to the original
+    identifier from the pseudonym with the help of additional
+    data like a cryptographic key or a mapping table.
+f15a98d0b050852f:
+  de: >-
+    **Formatbewahrende Pseudonymisierungsmethoden bewahren** das
+    ursprüngliche Format der Daten.
+  en: >-
+    **Format-preserving pseudonymization methods** preserve the
+    original format of the data.
+ff80303605521978:
+  de: >-
+    Kodex unterstützt schlüsselbasierte, umkehrbare Pseudonymisierungsmethoden,
+    die auf format-erhaltender Verschlüsselung basieren.
+  en: >-
+    Kodex supports key-based reversible pseudonymization methods
+    based on format-preserving encryption.

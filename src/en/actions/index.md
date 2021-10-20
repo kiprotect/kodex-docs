@@ -8,7 +8,7 @@ Often data is complex & hierarchical, making it difficult to apply simple transf
 
 ## Pseudonymization
 
-Pseudonymization produces data that is no longer directly attributable to a specific individual. Using pseudonymous data lowers the risk of data processing for individuals and reduces the impact of data loss or data theft. It can be applied to direct or indirect identifiers as well as to a wide range of structured data types like numbers, dates, names or IP addresses. Some pseudonymization methods are based on reversible encryption, which makes it possible to de-pseudonymize the data again given knowledge of the key. Other methods like hashing are non-reversible.
+Pseudonymization produces data that is no longer directly attributable to a specific individual. Using pseudonymous data lowers the risk of data processing for individuals and reduces the impact of data loss or data theft. It can be applied to direct or indirect identifiers as well as to a wide range of structured data types like numbers, dates, names or IP addresses. Some pseudonymization methods are based on reversible encryption, which makes it possible to de-pseudonymize the data again given knowledge of the key. Other methods like hashing are non-reversible. You can read more about this type of transformation in the [pseudonymization action documentation]({{'actions.pseudonymization'|href}})
 
 ## Encryption
 

@@ -1,0 +1,57 @@
+63d9c86e5a8333f4:
+  de: '## Rollenbasierte Zugriffsverwaltung'
+  en: '## Role-Based Access Management'
+6de582ed72576894:
+  de: >-
+    Die Kodex-API kann verschiedene Authentifizierungsverfahren
+    verwenden und ist mit mehreren externen Authentifizierungsanbietern
+    kompatibel. Die SaaS-Version der API, die unter `api.kiprotect.com`
+    verfügbar ist, verwendet eine tokenbasierte Authentifizierung.
+  en: >-
+    The Kodex API can use various authentication schemes and is
+    compatible with multiple external authentication providers.
+    The SaaS version of the API available at `api.kiprotect.com`
+    uses token-based authentication.
+79b93857e496197a:
+  de: >-
+    Ein **API-Objekt**, z.B. ein Projekt, ein Stream oder eine
+    Datenquelle, gehört entweder zu einem **Rollenobjekt** oder
+    ist ein eigenes **Rollenobjekt**.
+  en: >-
+    An **API object**, for example a project, stream or data source
+    either belongs to, or is its own **role object**.
+85111ae24cf30200:
+  de: >-
+    Daher können Benutzer auf der Grundlage der ihnen zugewiesenen
+    Organisationsrollen auf Objekte zugreifen und mit ihnen arbeiten.
+  en: >-
+    Hence, users can access and work with objects based on their
+    assigned organization roles.
+9cb152937c158535:
+  de: >-
+    Die Kodex API bietet rollenbasierte Zugriffskontrollen für
+    alle Objekte.
+  en: >-
+    The Kodex API provides role-based access controls for all
+    objects.
+a5136d80d9c95173:
+  de: >-
+    Rollenobjekte bilden bestimmte Objektrollen (die z.B. Schreib-
+    oder Leserechte für ein Objekt gewähren) auf Organisationsrollen
+    ab.
+  en: >-
+    Role objects map specific object roles (that e.g. grant writing
+    or reading rights to an object) to organization roles.
+ab9baf5b15f8db67:
+  de: '# Authentifizierung'
+  en: '# Authentication'
+da5e2636d571ae1c:
+  de: >-
+    Ein **API-Benutzer** gehört zu einer oder mehreren **Organisationen**
+    und hat eine oder mehrere **Rollen** in diesen Organisationen.
+  en: >-
+    An **API user** belongs to one or more **organizations** and
+    has one or more **roles** in those organizations.
+e3b0c44298fc1c14:
+  de: ''
+  en: ''

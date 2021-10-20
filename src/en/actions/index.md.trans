@@ -96,6 +96,33 @@
 6cca9541a6802b7a:
   de: '## Pseudonymisierung'
   en: <md-heading v="##">Pseudonymization</md-heading>
+77847ad29c2c568c:
+  de: >-
+    Die Pseudonymisierung erzeugt Daten, die nicht mehr direkt
+    einer bestimmten Person zugeordnet werden können. Die Verwendung
+    pseudonymer Daten verringert das Risiko der Datenverarbeitung
+    für Einzelpersonen und reduziert die Auswirkungen von Datenverlust
+    oder Datendiebstahl. Sie kann auf direkte oder indirekte Identifikatoren
+    sowie auf eine breite Palette strukturierter Datentypen wie
+    Zahlen, Daten, Namen oder IP-Adressen angewendet werden. Einige
+    Pseudonymisierungsmethoden basieren auf umkehrbarer Verschlüsselung,
+    die es ermöglicht, die Daten bei Kenntnis des Schlüssels wieder
+    zu de-pseudonymisieren. Andere Methoden wie Hashing sind nicht
+    umkehrbar. Mehr über diese Art der Umwandlung können Sie in
+    der [Dokumentation der Pseudonymisierungsaktion]({{'actions.pseudonymization'|href}})
+    nachlesen
+  en: >-
+    Pseudonymization produces data that is no longer directly
+    attributable to a specific individual. Using pseudonymous
+    data lowers the risk of data processing for individuals and
+    reduces the impact of data loss or data theft. It can be applied
+    to direct or indirect identifiers as well as to a wide range
+    of structured data types like numbers, dates, names or IP
+    addresses. Some pseudonymization methods are based on reversible
+    encryption, which makes it possible to de-pseudonymize the
+    data again given knowledge of the key. Other methods like
+    hashing are non-reversible. You can read more about this type
+    of transformation in the [pseudonymization action documentation]({{'actions.pseudonymization'|href}})
 77b94bee250b4d16:
   de: >-
     Identifizierungs- und Identitätsmanagement-Aktionen ermöglichen
@@ -136,6 +163,33 @@
 860ca9ec03dc6f31:
   de: '        <p>'
   en: '        <p>'
+a9e4994903d685ad:
+  de: >-
+    Die Pseudonymisierung erzeugt Daten, die nicht mehr direkt
+    einer bestimmten Person zugeordnet werden können. Die Verwendung
+    pseudonymer Daten verringert das Risiko der Datenverarbeitung
+    für Einzelpersonen und reduziert die Auswirkungen von Datenverlust
+    oder Datendiebstahl. Sie kann auf direkte oder indirekte Identifikatoren
+    sowie auf eine breite Palette strukturierter Datentypen wie
+    Zahlen, Daten, Namen oder IP-Adressen angewendet werden. Einige
+    Pseudonymisierungsmethoden basieren auf umkehrbarer Verschlüsselung,
+    die es ermöglicht, die Daten bei Kenntnis des Schlüssels wieder
+    zu de-pseudonymisieren. Andere Methoden wie Hashing sind nicht
+    umkehrbar. Mehr über diese Art der Umwandlung können Sie in
+    der [Dokumentation der Pseudonymisierungsaktion]({'actions.pseudonymization'|href})
+    nachlesen
+  en: >-
+    Pseudonymization produces data that is no longer directly
+    attributable to a specific individual. Using pseudonymous
+    data lowers the risk of data processing for individuals and
+    reduces the impact of data loss or data theft. It can be applied
+    to direct or indirect identifiers as well as to a wide range
+    of structured data types like numbers, dates, names or IP
+    addresses. Some pseudonymization methods are based on reversible
+    encryption, which makes it possible to de-pseudonymize the
+    data again given knowledge of the key. Other methods like
+    hashing are non-reversible. You can read more about this type
+    of transformation in the [pseudonymization action documentation]({'actions.pseudonymization'|href})
 b556fdbc1c6f4c1d:
   de: >-
     Oft sind Daten komplex & hierarchisch, was es schwierig macht,

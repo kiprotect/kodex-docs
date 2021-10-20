@@ -8,7 +8,7 @@ Oft sind Daten komplex & hierarchisch, was es schwierig macht, einfache Transfor
 
 ## Pseudonymisierung
 
-Die Pseudonymisierung erzeugt Daten, die nicht mehr direkt einer bestimmten Person zugeordnet werden können. Die Verwendung pseudonymisierter Daten senkt das Risiko der Datenverarbeitung für Einzelpersonen und verringert die Auswirkungen von Datenverlust oder Datendiebstahl. Sie kann sowohl auf direkte oder indirekte Identifikatoren als auch auf eine Vielzahl von strukturierten Datentypen wie Zahlen, Daten, Namen oder IP-Adressen angewandt werden. Einige Pseudonymisierungsmethoden basieren auf einer reversiblen Verschlüsselung, die es ermöglicht, die Daten bei Kenntnis des Schlüssels wieder zu de-pseudonymisieren. Andere Methoden wie Hashing sind nicht umkehrbar.
+Die Pseudonymisierung erzeugt Daten, die nicht mehr direkt einer bestimmten Person zugeordnet werden können. Die Verwendung pseudonymer Daten verringert das Risiko der Datenverarbeitung für Einzelpersonen und reduziert die Auswirkungen von Datenverlust oder Datendiebstahl. Sie kann auf direkte oder indirekte Identifikatoren sowie auf eine breite Palette strukturierter Datentypen wie Zahlen, Daten, Namen oder IP-Adressen angewendet werden. Einige Pseudonymisierungsmethoden basieren auf umkehrbarer Verschlüsselung, die es ermöglicht, die Daten bei Kenntnis des Schlüssels wieder zu de-pseudonymisieren. Andere Methoden wie Hashing sind nicht umkehrbar. Mehr über diese Art der Umwandlung können Sie in der [Dokumentation der Pseudonymisierungsaktion]({{'actions.pseudonymization'|href}}) nachlesen
 
 ## Verschlüsselung
 

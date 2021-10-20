@@ -1,0 +1,47 @@
+0c53e0f9c087d007:
+  de: >-
+    Detaillierte Informationen zu den API-Endpunkten finden Sie
+    dann in der [OpenAPI-Spezifikation](https://github.com/kiprotect/kodex/blob/master/api/openapi.yaml).
+  en: >-
+    Detailed information about the API endpoints can then be found
+    in the [OpenAPI specification](https://github.com/kiprotect/kodex/blob/master/api/openapi.yaml).
+284cb409ed76ae6b:
+  de: >-
+    Um loszulegen, lesen Sie bitte zunächst den Abschnitt über
+    die [Authentifizierung]({{'api.authentication'|href}}), in
+    dem erklärt wird, wie Sie auf die API zugreifen und wie die
+    rollenbasierte Zugriffsverwaltung funktioniert.
+  en: >-
+    To get started please first read the section on [authentication]({{'api.authentication'|href}}),
+    which explains how to access the API and how the role-based
+    access management works.
+29675516844582fa:
+  de: '    <h1>{{page.title}}</h1>'
+  en: '    <h1>{{page.title}}</h1>'
+5d1f00ce35a15bce:
+  de: '{% block content %}'
+  en: '{% block content %}'
+9bdd673fc4be420b:
+  de: '# Kodex API'
+  en: '# Kodex API'
+a9994a4f7717a2e7:
+  de: '{% endblock %}'
+  en: '{% endblock %}'
+aaa2be964706481a:
+  de: '    Guten Tag!'
+  en: '    Howdy!'
+da657a3aa32443f5:
+  de: >-
+    Kodex bietet eine REST-API, mit der Sie Aktionen, Stream-Konfigurationen,
+    Datenquellen und -ziele definieren und verwalten sowie Daten
+    transformieren können.
+  en: >-
+    Kodex provides a REST API that can be used to define and manage
+    actions, stream configurations, data sources and destinations
+    as well as transform data.
+e3b0c44298fc1c14:
+  de: ''
+  en: ''
+f9c5f30dc4189741:
+  de: '{% extends("with_comments.html") %}'
+  en: '{% extends("with_comments.html") %}'
