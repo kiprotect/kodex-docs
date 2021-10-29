@@ -41,16 +41,16 @@ pages:
     slug: uebersicht
     src: de/actions/index.md
     title: Übersicht
-  - name: form
-    navtitle: Formular Aktion
-    slug: formular-aktion
-    src: de/actions/form.md
-    title: Formular Aktion
   - name: pseudonymization
-    navtitle: Pseudonymisierung Aktion
-    slug: pseudonymisierung-aktion
+    navtitle: Pseudonymisierung
+    slug: pseudonymisierung
     src: de/actions/pseudonymization.md
-    title: Pseudonymisierung Aktion
+    title: Pseudonymisierung
+  - name: form
+    navtitle: Formular-Validierung
+    slug: formular-validierung
+    src: de/actions/form.md
+    title: Formular-Validierung
   name: actions
   navtitle: Aktionen
   slug: aktionen

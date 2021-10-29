@@ -44,16 +44,21 @@ pages:
         navtitle|t: Overview
         slug||slugify: overview
         name: index
-      - name: form
-        title|t: Form Action
-        navtitle|t: Form Action
-        slug||slugify: form
-        src|f|exists?: "{target_language}/actions/form.md"
+#      - name: reference
+#        title|t: Reference
+#        navtitle|t: Reference
+#        slug||slugify: reference
+#        src|f|exists?: "{target_language}/actions/reference.md"
       - name: pseudonymization
-        title|t: Pseudonymization Action
-        navtitle|t: Pseudonymization Action
+        title|t: Pseudonymization
+        navtitle|t: Pseudonymization
         slug||slugify: pseudonymization
         src|f|exists?: "{target_language}/actions/pseudonymization.md"
+      - name: form
+        title|t: Form Validation
+        navtitle|t: Form Validation
+        slug||slugify: form
+        src|f|exists?: "{target_language}/actions/form.md"
   - name: blueprints
     title|t: Blueprints
     navtitle|t: Blueprints

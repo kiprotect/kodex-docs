@@ -1,3 +1,23 @@
+0d3d2f5a8b2fc178:
+  de: '    {'
+  en: '    {'
+294fdc9a9862f361:
+  de: >-
+    * `n`: Die Nanosekunden der Zeit in Form einer neunstelligen
+    Zahl (z.B. 000000001)
+  en: >-
+    * `n`: The nanoseconds of the time as a nine digit number
+    (e.g. 000000001)
+344680ed1c06f69f:
+  de: >-
+    * `hmac`: Nicht-struktur- und nicht-formaterhaltende, nicht
+    umkehrbare, authentifizierte Hash-basierte Pseudonymisierung.
+  en: >-
+    * `hmac`: Non-structure & non-format preserving, non-reversible,
+    authenticated hash-based pseudonymization.
+378754ad7fbf724d:
+  de: '      Name: "preserve-prefixes",'
+  en: '      Name: "preserve-prefixes",'
 387bc15e6476e415:
   de: >-
     Dieses Prinzip lässt sich auf weitergehende strukturelle Eigenschaften
@@ -5,6 +25,23 @@
   en: >-
     This principle can be extended to more advanced structural
     properties, as discussed below.
+3a97910523c0d01f:
+  de: '### Strukturierte Pseudonymisierungsparameter'
+  en: '### Structured Pseudonymization Parameters'
+3aef80d2c77e3f87:
+  de: >-
+    *  <md-it>`preserve-prefixes`* : Bei true * bleiben die Präfixe
+    eines strukturierten Datenwerts erhalten. Wenn Sie beispielsweise
+    das Format `date` verwenden, werden Datumsangaben mit einem
+    gemeinsamen Präfix (z.B. das gleiche Jahr und der gleiche
+    Monat) Pseudonymen zugeordnet, die ebenfalls ein Präfix der
+    gleichen Länge haben. Standardmäßig auf * false*.
+  en: >-
+    * `preserve-prefixes`: If *true*, will preserve the prefixes
+    of a structured data value. For example, when using the `date`
+    format, dates with a common prefix (e.g. the same year and
+    month) will be mapped to pseudonyms that also share a prefix
+    of the same length. Default to *false*.
 3f23853ed8859ebf:
   de: >-
     Die resultierenden Pseudonyme können mit dem Originalschlüssel
@@ -88,9 +125,40 @@
     the original identifiers must have been identical too. This
     principle can be extended to more advanced structural properties,
     as discussed below.
+58636dd916833390:
+  de: '    },'
+  en: '    },'
+5d8d8469affa177f:
+  de: >-
+    Zusätzlich zu der üblichen Syntax erlaubt das Format auch
+    die Angabe von Bereichen, die in Klammern nach dem Zeichen
+    `%` angegeben werden müssen. Zum Beispiel begrenzt `%Y(2001-2022)`
+    das Jahr auf Werte zwischen 2001 und 2022. Die Angabe von
+    Bereichen kann nützlich sein, um sicherzustellen, dass pseudonymisierte
+    Zeitstempel innerhalb eines erwarteten Bereichs liegen. Dies
+    setzt jedoch voraus, dass alle Eingabewerte ebenfalls in diesem
+    Bereich liegen.
+  en: >-
+    In addition to the common syntax, the format also allows specifying
+    ranges, which need to be provided in parentheses after the
+    `%` sign. For example, `%Y(2001-2022)` limits the year to
+    values between 2001 and 2022. Specifying ranges can be useful
+    to ensure that pseudonymized timestamp are within an expected
+    range. However, this requires that all input values be in
+    that range as well.
 64aa9c40adcb3e93:
   de: '### Strukturerhaltende Methoden'
   en: '### Structure-Preserving Methods'
+6810cb35404a0724:
+  de: >-
+    * `M`: Die Minute der Uhrzeit als zweistellige Zahl (z.B.
+    01 oder 59)
+  en: >-
+    * `M`: The minute of the time as a two digit number (e.g.
+    01 or 59)
+6fe77b958279ff30:
+  de: '  Felder: []forms.Field{'
+  en: '  Fields: []forms.Field{'
 715cf4f73c498f57:
   de: >-
     Kodex unterstützt auch nicht umkehrbare Pseudonymisierungsmethoden,
@@ -103,6 +171,12 @@
     well, notably keyed hash-based pseudonymization based on keyed-hash
     message authentication codes (HMAC), as well as unkeyed hash-based
     pseudonymization (which we strongly discourage).
+74adeab036be6c9d:
+  de: '        forms.IsOptional {Default: false},'
+  en: '        forms.IsOptional{Default: false},'
+7945ac283e64ca37:
+  de: var StructuredPseudonymizerForm = forms.Form{
+  en: var StructuredPseudonymizerForm = forms.Form{
 79b8f04453c1b65a:
   de: >-
     Pseudonymisierung ist eine **Technologie zur Verbesserung
@@ -112,6 +186,9 @@
     Pseudonymization is a **privacy-enhancing technology (PET)**
     that replaces direct or indirect identifiers in a datapoint
     with other, "pseudonymous" values.
+7ae68ed59f0c2dcf:
+  de: '      },'
+  en: '      },'
 7cfbff121103e752:
   de: >-
     Kodex unterstützt auch nicht umkehrbare Pseudonymisierungsmethoden,
@@ -148,6 +225,9 @@
     Kodex supports reversible pseudonymization methods based on
     format-preserving encryption methods. The resulting pseudonyms
     can
+8ea3cd6e6cedbef6:
+  de: '#### Datum Format'
+  en: '#### Date Format'
 94c596122283bf14:
   de: '# Pseudonymisierung'
   en: '# Pseudonymization'
@@ -161,9 +241,65 @@
     This protects the identity of the individual(s) that the data
     belongs to, as an adversary or a user of the data can no longer
     establish a relationship to a specific person.
+97e102d33024c61a:
+  de: >-
+    * `type-params`: Gibt je nach gewähltem Typ zusätzliche Typparameter
+    an. Derzeit erfordert nur der Typ `integer` die obligatorischen
+    Parameter `min` und `max`, die seinen Bereich angeben.
+  en: >-
+    * `type-params`: Specifies additional type parameters depending
+    on the chosen type. Currently, only the `integer` type requires
+    mandatory `min` and `max` type parameters that specify its
+    range.
+98133d7e82eba1f4:
+  de: >-
+    Der Typ `date` kann Datumsangaben in verschiedenen Formaten
+    analysieren und erzeugen. Der `format` Spezifizierer ist dem
+    Standard-Unix-Zeitformat nachempfunden und verwendet `%` Zeichen,
+    gefolgt von einem Formatcode. Die folgenden Codes werden unterstützt:
+  en: >-
+    The `date` type can parse and produce dates in various formats.
+    The `format` specifier is modeled after the standard Unix
+    time format, using `%` characters followed by a format code.
+    The following codes are supported:
+9e5a9f45b0dde98b:
+  de: 'Die Methode `structured` akzeptiert die folgenden Parameter:'
+  en: 'The `structured` method accepts the following parameters:'
+a4a090dd4218486c:
+  de: >-
+    * `format`: Gibt das typabhängige Format der zu pseudonymisierenden
+    Daten an (falls zutreffend). Derzeit unterstützt nur der Typ
+    `data` den Parameter `format`, wie unten beschrieben.
+  en: >-
+    * `format`: Specifies the type-dependent format of the data
+    to be pseudonymized (if applicable). Currently, only the `data`
+    type supports the `format` parameter, as described below.
+a5b90b97ea2d4395:
+  de: >-
+    Die Methode `merengue` akzeptiert einen Parameter `encode`,
+    der die Kodierung der resultierenden Byte-Zeichenfolge angibt.
+    Derzeit ist der einzig mögliche Wert (und die Vorgabe) `base64`.
+  en: >-
+    The `merengue` method accepts an `encode` parameter that specifies
+    the encoding of the resulting byte string. Currently the only
+    possible value (and the default) is `base64`.
 a5eeb582c42a5abf:
   de: '## Umkehrbare Methoden'
   en: '## Reversible Methods'
+a7483bb950e2f9f4:
+  de: >-
+    * `type`: Gibt den zu pseudonymisierenden Datentyp an. Muss
+    einer von `ip`, `date`, `integer`, `ipv4` oder `ipv6` sein.
+  en: >-
+    * `type`: Specifies the data type to pseudonymize. Must be
+    one of `ip`, `date`, `integer`, `ipv4` or `ipv6`.
+af552815f1349537:
+  de: >-
+    * `z`: Die Zeitzone der Uhrzeit als vierstellige Zahl mit
+    Vorzeichen (z.B. +0400 oder - 0730)
+  en: >-
+    * `z`: The time zone of the time as a signed four digit number
+    (e.g. +0400 or - 0730)
 aff067f57327ecec:
   de: '## Nicht-umkehrbare Methoden'
   en: '## Non-Reversible Methods'
@@ -174,6 +310,16 @@ b93cc01f313eae33:
   en: >-
     For example, a deterministic pseudonymization method is also
     structure-preserving in regards to the equality operator:
+ba345c89a915f377:
+  de: >-
+    * `H`: Die Stunde der Uhrzeit als zweistellige Zahl (z.B.
+    11 oder 07)
+  en: >-
+    * `H`: The hour of the time as a two digit number (e.g. 11
+    or 07)
+bb115e78b90ae0b9:
+  de: '### Merengue Parameter'
+  en: '### Merengue Parameters'
 bce98c2c5cc0f090:
   de: >-
     Beispielsweise könnte eine formatschonende Methode ein gültiges
@@ -181,6 +327,13 @@ bce98c2c5cc0f090:
   en: >-
     For example, a format-preserving method could generate a valid
     zip code pseudonym from an original zip code.
+bd65cc5fa6b47472:
+  de: >2-
+      ErrorMsg: "Es wurden ungültige Daten im strukturierten Pseudonymisierungsformular
+    gefunden",
+  en: >2-
+      ErrorMsg: "invalid data encountered in the structured pseudonymizer
+    form",
 beb02f7118190ea0:
   de: >-
     Die folgenden Aktionen führen zum Beispiel eine struktur-
@@ -190,6 +343,12 @@ beb02f7118190ea0:
     For example, the following actions perform structure- and
     format-preserving pseudonymization of the above-mentioned
     data types:
+c1182f6605131195:
+  de: '        forms.IsString {},'
+  en: '        forms.IsString{},'
+c12649f3bdc46c9a:
+  de: '      Name: "Schlüssel",'
+  en: '      Name: "key",'
 c2c4ac9d647f8da5:
   de: >-
     Diese Methoden bewahren das Format der Originaldaten und können
@@ -242,6 +401,38 @@ c42aa21e2ea4fbdb:
     preserve the original format of the data. For example, a format-preserving
     method could generate a valid zip code pseudonym from an original
     zip code.
+c4a716348815ae7a:
+  de: >-
+    * `merengue`: Nicht-struktur- und nicht-formaterhaltende,
+    reversible, verschlüsselungsbasierte Pseudonymisierung.
+  en: >-
+    * `merengue`: Non-structure & non-format preserving, reversible,
+    encryption-based pseudonymization.
+cf9fe7c490e0bf34:
+  de: '### Merengue Pseudonymisierungs-Parameter'
+  en: '### Merengue Pseudonymization Parameters'
+d8cc8b8bf427c1a7:
+  de: >-
+    Wie alle Aktionen erfordert die Methode `pseudonymize` den
+    Parameter `config`, der wiederum einen Parameter `key` erfordert,
+    der das Attribut angibt, das pseudonymisiert werden soll,
+    sowie einen Parameter `method`, der die Pseudonymisierungsmethode
+    angibt. Derzeit werden die folgenden Methoden unterstützt:
+  en: >-
+    Like all actions, the `pseudonymize` method requires the `config`
+    parameter, which in turn requires a `key` parameter that specifies
+    the attribute that should be pseudonymized as well as a `method`
+    parameter that specifies the pseudonymization method. Currently
+    the following methods are supported:
+d93b3dadf8d7b76a:
+  de: '* `Y`: Das Jahr als vierstellige Zahl (z.B. 2021)'
+  en: '* `Y`: The year as a four-digit number (e.g. 2021)'
+dadc692c25195ff5:
+  de: 'Die Methode `merengue` benötigt die folgenden Parameter:'
+  en: 'The `merengue` method requires the following parameters:'
+dc126396cc41fdda:
+  de: '* `m`: Der Monat als zweistellige Zahl (z.B. 01 oder 12)'
+  en: '* `m`: The month as a two-digit number (e.g. 01 or 12)'
 e130187467de04dc:
   de: >-
     Pseudonymisierung ist eine Technologie zur Verbesserung der
@@ -258,9 +449,33 @@ e130187467de04dc:
     the individual(s) that the data belongs to, as an adversary
     or a user of the data can no longer establish a relationship
     to a specific person.
+e21b73f86a989207:
+  de: >-
+    Je nach gewählter Methode sind zusätzliche Konfigurationsparameter
+    erforderlich, wie unten beschrieben.
+  en: >-
+    Depending on the chosen method, additional configuration parameters
+    are necessary, as described below.
 e3b0c44298fc1c14:
   de: ''
   en: ''
+e74826b6bf1c7f27:
+  de: >-
+    * `S`: Die Sekunde der Uhrzeit als zweistellige Zahl (z.B.
+    01 oder 59)
+  en: >-
+    * `S`: The second of the time as a two digit number (e.g.
+    01 or 59)
+e8d198429c35fa10:
+  de: '## Referenz'
+  en: '## Reference'
+ec0440f9a72ede7d:
+  de: >-
+    * `structured`: Struktur- & Format-erhaltende, umkehrbare,
+    verschlüsselungsbasierte Pseudonymisierung.
+  en: >-
+    * `structured`: Structure- & format-preserving, reversible,
+    encryption-based pseudonymization.
 ed9bbebd1ebf90b6:
   de: >-
     **Nicht-deterministische Methoden** erzeugen zufällige Pseudonyme,
@@ -269,6 +484,9 @@ ed9bbebd1ebf90b6:
   en: >-
     **Non-deterministic methods** will produce random pseudonyms
     even when applied to the same identifier multiple times.
+ed9c1b0e8377b07a:
+  de: '      Validatoren: []forms.Validator{'
+  en: '      Validators: []forms.Validator{'
 ef186e21d3c8f536:
   de: >-
     Pseudonymisierungsmethoden können auf der Grundlage ihrer
@@ -283,6 +501,13 @@ ef186e21d3c8f536:
     the de-pseudonymization of data, i.e. going back to the original
     identifier from the pseudonym with the help of additional
     data like a cryptographic key or a mapping table.
+f05926eeac1231ff:
+  de: >-
+    * `d`: Der Tag des Monats in Form einer zweistelligen Zahl
+    (z.B. 03 oder 30)
+  en: >-
+    * `d`: The day of the month as a two digit number (e.g. 03
+    or 30)
 f15a98d0b050852f:
   de: >-
     **Formatbewahrende Pseudonymisierungsmethoden bewahren** das
@@ -290,6 +515,9 @@ f15a98d0b050852f:
   en: >-
     **Format-preserving pseudonymization methods** preserve the
     original format of the data.
+f9045e92dcc28ae9:
+  de: '        forms.IsOptional {},'
+  en: '        forms.IsOptional{},'
 ff80303605521978:
   de: >-
     Kodex unterstützt schlüsselbasierte, umkehrbare Pseudonymisierungsmethoden,

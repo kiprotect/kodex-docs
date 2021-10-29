@@ -71,3 +71,42 @@ Kodex supports non-reversible pseudonymization methods as well, notably keyed ha
     key: id
     method: hmac
 ```
+
+## Reference
+
+Like all actions, the `pseudonymize` method requires the `config` parameter, which in turn requires a `key` parameter that specifies the attribute that should be pseudonymized as well as a `method` parameter that specifies the pseudonymization method. Currently the following methods are supported:
+
+* `merengue`: Non-structure & non-format preserving, reversible, encryption-based pseudonymization.
+* `structured`: Structure- & format-preserving, reversible, encryption-based pseudonymization.
+* `hmac`: Non-structure & non-format preserving, non-reversible, authenticated hash-based pseudonymization.
+
+Depending on the chosen method, additional configuration parameters are necessary, as described below.
+
+### Merengue Pseudonymization Parameters
+
+The `merengue` method accepts an `encode` parameter that specifies the encoding of the resulting byte string. Currently the only possible value (and the default) is `base64`.
+
+
+### Structured Pseudonymization Parameters
+
+The `structured` method accepts the following parameters:
+
+* `preserve-prefixes`: If *true*, will preserve the prefixes of a structured data value. For example, when using the `date` format, dates with a common prefix (e.g. the same year and month) will be mapped to pseudonyms that also share a prefix of the same length. Default to *false*.
+* `type`: Specifies the data type to pseudonymize. Must be one of `ip`, `date`, `integer`, `ipv4` or `ipv6`.
+* `type-params`: Specifies additional type parameters depending on the chosen type. Currently, only the `integer` type requires mandatory `min` and `max` type parameters that specify its range.
+* `format`: Specifies the type-dependent format of the data to be pseudonymized (if applicable). Currently, only the `data` type supports the `format` parameter, as described below.
+
+#### Date Format
+
+The `date` type can parse and produce dates in various formats. The `format` specifier is modeled after the standard Unix time format, using `%` characters followed by a format code. The following codes are supported:
+
+* `Y`: The year as a four-digit number (e.g. 2021)
+* `m`: The month as a two-digit number (e.g. 01 or 12)
+* `d`: The day of the month as a two digit number (e.g. 03 or 30)
+* `H`: The hour of the time as a two digit number (e.g. 11 or 07)
+* `M`: The minute of the time as a two digit number (e.g. 01 or 59)
+* `S`: The second of the time as a two digit number (e.g. 01 or 59)
+* `n`: The nanoseconds of the time as a nine digit number (e.g. 000000001)
+* `z`: The time zone of the time as a signed four digit number (e.g. +0400 or - 0730)
+
+In addition to the common syntax, the format also allows specifying ranges, which need to be provided in parentheses after the `%` sign. For example, `%Y(2001-2022)` limits the year to values between 2001 and 2022. Specifying ranges can be useful to ensure that pseudonymized timestamp are within an expected range. However, this requires that all input values be in that range as well.

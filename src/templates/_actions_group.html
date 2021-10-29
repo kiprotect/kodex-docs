@@ -1,0 +1,37 @@
+<h3>{{group[1].title[lang]}}</h3>
+<p>
+	{{group[1].description[lang]}}
+</p>
+<div class="api">
+	<div class="endpoints">
+		<div class="title">
+			Endpoints
+		</div>
+		<div class="body">
+			<ul class="routes">
+				{% for endpoint in group[1].endpoints %}
+				<li class="route"><span class="method">{{endpoint.method}}</span> /v1/{{endpoint.url|e}}</li>
+				{% endfor %}
+			</ul>
+		</div>
+	</div>
+	{% if group[1].attributes|length > 0 %}
+	<div class="attributes">
+		<div class="title">
+			Attributes
+		</div>
+		<div class="body">
+			<table>
+				<tbody>
+					{% for attribute in group[1].attributes.items()|sort(attribute='1.order')%}
+					<tr>
+						<td>{{attribute[0]}}</td>
+						<td>{{attribute[1].description[lang]}}</td>
+					</tr>
+					{% endfor %}
+				</tbody>
+			</table>
+		</div>
+	</div>
+	{% endif %}
+</div>
